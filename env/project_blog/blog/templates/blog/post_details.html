@@ -55,7 +55,8 @@
         }
 
         .back-link a,
-        .delete-button {
+        .delete-button,
+        .edit-button {
             color: #5c6bc0;
             text-decoration: none;
             font-size: 16px;
@@ -69,7 +70,8 @@
         }
 
         .back-link a:hover,
-        .delete-button:hover {
+        .delete-button:hover,
+        .edit-button:hover {
             background-color: #e0e0e0;
         }
 
@@ -82,8 +84,23 @@
             background-color: #d32f2f;
         }
 
+        .edit-button {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .edit-button:hover {
+            background-color: #388E3C;
+        }
+
         p {
             word-wrap: break-word;
+        }
+
+        .flex-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
         }
     </style>
 </head>
@@ -92,12 +109,21 @@
     <div class="container">
         <h1>{{ post.title }}</h1>
         <p>{{ post.content }}</p>
-        <small>Publié le {{ post.created_at|date:"d/m/Y" }}</small>
+        <p style="text-align: center;">------------------</p>
 
+        <div class="flex-row">
+            <small>Catégorie : {{ post.category }}</small>
+            <small>Publié le {{ post.created_at|date:"d/m/Y" }}</small>
+        </div>
         <div class="actions">
             <div class="back-link">
                 <a href="{% url 'blog-home' %}">Retour à la liste des posts</a>
             </div>
+
+            {% if user.is_superuser or user == post.author %}
+            <a href="{% url 'edit-post' post.id %}" class="edit-button">Modifier</a>
+            {% endif %}
+
 
             {% if user.is_superuser or user == post.author %}
             <form method="post" action="{% url 'delete-post' post.id %}"

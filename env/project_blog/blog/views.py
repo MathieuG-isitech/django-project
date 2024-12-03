@@ -69,3 +69,32 @@ def logout_view(request):
 def post_details(request, slug):
     post = get_object_or_404(Post, slug=slug)
     return render(request, 'blog/post_details.html', {'post': post})
+
+def edit_post(request, post_id):
+    # Récupérer le post à éditer
+    post = get_object_or_404(Post, id=post_id)
+
+    # Vérification des permissions 
+    if request.user != post.author and not request.user.is_superuser:
+        return redirect('blog-home')  # Rediriger si l'utilisateur n'a pas l'autorisation
+
+    if request.method == 'POST':
+        # Récupérer les données du formulaire
+        title = request.POST.get('title')
+        content = request.POST.get('content')
+        category_id = request.POST.get('category')
+        category = Category.objects.get(id=category_id)
+
+        # Mettre à jour les champs du post
+        post.title = title
+        post.content = content
+        post.category = category
+
+        
+        post.save()
+
+        return redirect('blog-home')
+
+    else:
+        categories = Category.objects.all()
+        return render(request, 'blog/edit_post.html', {'post': post, 'categories': categories})

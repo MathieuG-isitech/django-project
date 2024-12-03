@@ -25,6 +25,7 @@ urlpatterns = [
     path('post-form/', views.post_form, name='blog-post-form'), 
     path('post/<int:post_id>/delete/', views.delete_post, name='delete-post'),
     path('post/<slug:slug>/', views.post_details, name='post_details'),
+    path('post/<int:post_id>/edit/', views.edit_post, name='edit-post'),
     
     path('login/', views.login_view, name='login'),
     path('signup/', views.signup_view, name='signup'),
