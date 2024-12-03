@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter un article</title>
+    <style>
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: white;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 1.5rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        input,
+        textarea,
+        select {
+            font-size: 16px;
+            padding: 0.8rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 100%;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            border-color: #5c6bc0;
+            box-shadow: 0 0 5px rgba(92, 107, 192, 0.5);
+        }
+
+        button {
+            background-color: #5c6bc0;
+            color: white;
+            padding: 1rem;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #3f51b5;
+        }
+
+        .back-link {
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+
+        .back-link a {
+            color: #5c6bc0;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Ajouter un nouvel article</h1>
+        <form method="post" action="{% url 'blog-post-form' %}">
+            {% csrf_token %}
+            <div>
+                <label for="title">Titre :</label>
+                <input type="text" id="title" name="title" required placeholder="Entrez le titre de l'article">
+            </div>
+            <div>
+                <label for="content">Contenu :</label>
+                <textarea id="content" name="content" rows="6" required
+                    placeholder="Entrez le contenu de l'article"></textarea>
+            </div>
+            <div>
+                <label for="category">Catégorie :</label>
+                <select id="category" name="category" required>
+                    {% for category in categories %}
+                    <option value="{{ category.id }}">{{ category.nom }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <button type="submit">Publier</button>
+        </form>
+
+        <div class="back-link">
+            <a href="{% url 'blog-home' %}">Retour à la page d'accueil</a>
+        </div>
+    </div>
+</body>
+
+</html>

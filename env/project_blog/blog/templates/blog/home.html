@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Projet</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .template-post {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .post-title {
+            width: 500px;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            border: 2px solid #5c6bc0;
+            border-radius: 12px;
+            background-color: #fff;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .post-title.user-post {
+            border-color: #ffcc00;
+        }
+
+        .user-post-message {
+            font-size: 14px;
+            color: #ff9900;
+            font-weight: bold;
+            position: absolute;
+            top: -15px;
+            right: 10px;
+            background-color: #fff8e1;
+            padding: 2px 5px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        .post-title a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+        }
+
+        .post-title a:hover {
+            color: #5c6bc0;
+        }
+
+        .nav-bar {
+            background-color: rgb(43, 43, 43);
+            color: white;
+            padding: 10px;
+            width: 100%;
+        }
+
+        .user-connected {
+            background-color: white !important;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .display-post {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <p>Home</p>
+
+        {% if user.is_authenticated %}
+        <div>
+            <p>Bienvenue, {{ user.username }}</p>
+            <a class="user-connected" href="{% url 'logout' %}">Se déconnecter</a>
+        </div>
+        {% else %}
+        <div>
+            <a class="user-connected" href="{% url 'login' %}">Se connecter</a> |
+            <a class="user-connected" href="{% url 'signup' %}">S'inscrire</a>
+        </div>
+        {% endif %}
+    </div><br>
+
+    <div class="template-post">
+        <a href="{% url 'blog-post-form' %}" class="button-add">Ajouter un post</a>
+
+        {% for post in posts %}
+        <div class="post-title {% if post.author == user %}user-post{% endif %}">
+            {% if post.author == user %}
+            <span class="user-post-message">Vous avez créé ce post</span>
+            {% endif %}
+            <a href="{% url 'post_details' post.slug %}">
+                <div class="display-post">
+                    <p>{{ post.title }}</p>
+                    -----
+                    <span style="color: rgb(0, 0, 128);">{{ post.created_at }}</span>
+                </div>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+
+</html>
