@@ -27,6 +27,11 @@ urlpatterns = [
     path('post/<slug:slug>/', views.post_details, name='post_details'),
     path('post/<int:post_id>/edit/', views.edit_post, name='edit-post'),
     
+    path('categories/', views.category_list, name='category-list'),
+    path('categories/create/', views.category_create, name='create-category'),
+    path('categories/edit/<int:category_id>/', views.edit_category, name='edit-category'),
+    path('categories/delete/<int:category_id>/', views.delete_category, name='delete-category'),
+    
     path('login/', views.login_view, name='login'),
     path('signup/', views.signup_view, name='signup'),
     path('logout/', views.logout_view, name='logout'),

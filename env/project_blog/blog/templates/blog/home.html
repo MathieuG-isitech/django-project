@@ -77,6 +77,21 @@
             display: flex;
             flex-direction: column;
         }
+
+        .admin-button {
+            background-color: #5c6bc0;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .admin-button:hover {
+            background-color: #3f4c8b;
+        }
     </style>
 </head>
 
@@ -99,6 +114,11 @@
 
     <div class="template-post">
         <a href="{% url 'blog-post-form' %}" class="button-add">Ajouter un post</a>
+
+        <!-- Ajouter le bouton d'administration des catégories uniquement si l'utilisateur est admin -->
+        {% if user.is_superuser %}
+        <a href="{% url 'category-list' %}" class="admin-button">Gérer les Catégories</a>
+        {% endif %}
 
         {% for post in posts %}
         <div class="post-title {% if post.author == user %}user-post{% endif %}">

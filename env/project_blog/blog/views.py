@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Post, Category
 from django.utils.text import slugify
+from .forms import CategoryForm
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
@@ -98,3 +99,51 @@ def edit_post(request, post_id):
     else:
         categories = Category.objects.all()
         return render(request, 'blog/edit_post.html', {'post': post, 'categories': categories})
+    
+    
+    
+    
+    # CRUD catégorie
+    
+@login_required
+def category_list(request):
+    categories = Category.objects.all()
+    return render(request, 'blog/admin/category_list.html', {'categories': categories})
+
+@login_required
+def category_create(request):
+    if request.method == 'POST':
+        nom = request.POST.get('nom')
+        description = request.POST.get('description') 
+
+        if nom and description:
+            
+            Category.objects.create(nom=nom, description=description)
+            return redirect('category-list') 
+
+    return render(request, 'blog/admin/category_create.html')
+
+
+@login_required
+def edit_category(request, category_id):
+    category = get_object_or_404(Category, id=category_id)
+
+    if request.method == 'POST':
+        nom = request.POST.get('nom')
+        description = request.POST.get('description')  
+
+        if nom:
+            
+            category.nom = nom
+            if description:
+                category.description = description
+            category.save()
+            return redirect('category-list')
+
+    return render(request, 'blog/admin/category_edit.html', {'category': category})
+
+@login_required
+def delete_category(request, category_id):
+    category = get_object_or_404(Category, id=category_id)
+    category.delete()
+    return redirect('category-list')

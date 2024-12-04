@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créer une Catégorie</title>
+</head>
+
+<body>
+    <h1>{% if category %}Modifier la catégorie{% else %}Créer une nouvelle catégorie{% endif %}</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+        <div>
+            <label for="name">Nom de la catégorie :</label>
+            <input type="text" name="name" id="name" value="{% if category %}{{ category.nom }}{% else %}{% endif %}"
+                required>
+        </div>
+        <div>
+            <label for="name">Description :</label>
+            <input type="text" name="description" id="description" value="{% if category %}{{ category.description }}{% else %}{% endif %}"
+                required>
+        </div>
+        <button type="submit">{% if category %}Mettre à jour{% else %}Créer{% endif %}</button>
+    </form>
+
+    <div>
+        <a href="{% url 'category-list' %}">Retour à la liste des catégories</a>
+    </div>
+</body>
+
+</html>
