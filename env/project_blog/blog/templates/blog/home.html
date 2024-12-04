@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Projet</title>
+    {% load i18n %}
+    <title>{% trans "Blog Project" %}</title>
     <style>
+        /* Votre style actuel */
         body {
             margin: 0;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -97,32 +99,44 @@
 
 <body>
     <div class="nav-bar">
-        <p>Home</p>
+        <p>{% trans "Home" %}</p>
 
         {% if user.is_authenticated %}
         <div>
-            <p>Bienvenue, {{ user.username }}</p>
-            <a class="user-connected" href="{% url 'logout' %}">Se déconnecter</a>
+            <p>{% trans "Welcome," %} {{ user.username }}</p>
+            <a class="user-connected" href="{% url 'logout' %}">{% trans "Logout" %}</a>
         </div>
         {% else %}
         <div>
-            <a class="user-connected" href="{% url 'login' %}">Se connecter</a> |
-            <a class="user-connected" href="{% url 'signup' %}">S'inscrire</a>
+            <a class="user-connected" href="{% url 'login' %}">{% trans "Login" %}</a> |
+            <a class="user-connected" href="{% url 'signup' %}">{% trans "Sign Up" %}</a>
         </div>
         {% endif %}
+
+        <!-- Formulaire de changement de langue -->
+        <div>
+            <form method="post" action="{% url 'set_language' %}">
+                {% csrf_token %}
+                <select name="language" onchange="this.form.submit()">
+                    <option value="en" {% if LANGUAGE_CODE == 'en' %}selected{% endif %}>{% trans "English" %}</option>
+                    <option value="fr" {% if LANGUAGE_CODE == 'fr' %}selected{% endif %}>{% trans "French" %}</option>
+                </select>
+            </form>
+            
+        </div>
     </div><br>
 
     <div class="template-post">
-        <a href="{% url 'blog-post-form' %}" class="button-add">Ajouter un post</a>
+        <a href="{% url 'blog-post-form' %}" class="button-add">{% trans "Add a post" %}</a>
 
         {% if user.is_superuser %}
-        <a href="{% url 'category-list' %}" class="admin-button">Gérer les Catégories</a>
+        <a href="{% url 'category-list' %}" class="admin-button">{% trans "Manage Categories" %}</a>
         {% endif %}
 
         {% for post in posts %}
         <div class="post-title {% if post.author == user %}user-post{% endif %}">
             {% if post.author == user %}
-            <span class="user-post-message">Vous avez créé ce post</span>
+            <span class="user-post-message">{% trans "You created this post" %}</span>
             {% endif %}
             <a href="{% url 'post_details' post.slug %}">
                 <div class="display-post">

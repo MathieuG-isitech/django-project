@@ -30,6 +30,7 @@ MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -134,7 +135,6 @@ LOGGING = {
 
  
 # Internationalisation
-LANGUAGE_CODE = 'fr-fr'
 TIME_ZONE = 'Europe/Paris'
 USE_I18N = True
 USE_L10N = True
@@ -145,6 +145,8 @@ LANGUAGES = [
     ('en', 'English'),
     ('fr', 'Français'),
 ]
+
+LANGUAGE_CODE = 'en'
 
 LOCALE_PATHS = [
     BASE_DIR / 'locale',  # Répertoire où les fichiers de traduction seront stockés

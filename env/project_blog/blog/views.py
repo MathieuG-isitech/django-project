@@ -3,6 +3,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from .models import Post, Category
 from django.utils.text import slugify
 from .forms import CategoryForm
+from django.utils.translation import get_language
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
@@ -15,7 +16,14 @@ def home(request):
     logger.info("Accès à la page d'accueil.")
     posts = Post.objects.all()
     logger.debug(f"{len(posts)} posts récupérés depuis la base de données.")
-    return render(request, 'blog/home.html', {'posts': posts})
+    
+    # Ajouter LANGUAGE_CODE au contexte
+    context = {
+        'posts': posts,
+        'LANGUAGE_CODE': get_language(),  # Ajout de LANGUAGE_CODE au contexte
+    }
+    
+    return render(request, 'blog/home.html', context)
 
 def post(request):
     logger.info("Accès à la page de détail d'un post.")

@@ -325,3 +325,609 @@ INFO 2024-12-04 11:29:16,834 views Accès à la page d'accueil.
 INFO 2024-12-04 11:29:16,952 basehttp "GET / HTTP/1.1" 200 5638
 INFO 2024-12-04 11:34:51,025 autoreload C:\code\cours-django\django-project\env\project_blog\project_blog\settings.py changed, reloading.
 INFO 2024-12-04 11:34:52,151 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 12:38:48,203 basehttp "GET /post/gggggggggggggggg/ HTTP/1.1" 200 3627
+WARNING 2024-12-04 12:38:48,351 log Not Found: /favicon.ico
+INFO 2024-12-04 12:38:48,353 basehttp - Broken pipe from ('127.0.0.1', 61227)
+INFO 2024-12-04 12:38:49,392 views Accès à la page d'accueil.
+INFO 2024-12-04 12:38:49,598 basehttp "GET / HTTP/1.1" 200 5638
+WARNING 2024-12-04 12:38:49,700 log Not Found: /favicon.ico
+INFO 2024-12-04 12:38:49,701 basehttp - Broken pipe from ('127.0.0.1', 61229)
+INFO 2024-12-04 12:43:14,065 views Accès à la liste des catégories.
+INFO 2024-12-04 12:43:14,078 basehttp "GET /categories/ HTTP/1.1" 200 5467
+INFO 2024-12-04 12:43:20,938 basehttp "GET /categories/create/ HTTP/1.1" 200 2465
+INFO 2024-12-04 12:43:22,689 views Accès à la page d'accueil.
+INFO 2024-12-04 12:43:22,841 basehttp "GET / HTTP/1.1" 200 5638
+INFO 2024-12-04 12:43:44,521 basehttp "GET /post/admin/ HTTP/1.1" 200 3412
+INFO 2024-12-04 12:43:50,002 views Accès à la page d'accueil.
+INFO 2024-12-04 12:43:50,147 basehttp "GET / HTTP/1.1" 200 5638
+INFO 2024-12-04 12:43:51,518 views Accès à la liste des catégories.
+INFO 2024-12-04 12:43:51,525 basehttp "GET /categories/ HTTP/1.1" 200 5467
+INFO 2024-12-04 12:43:55,293 views Accès à la modification de la catégorie ID 3.
+INFO 2024-12-04 12:43:55,303 basehttp "GET /categories/edit/3/ HTTP/1.1" 200 2346
+INFO 2024-12-04 13:40:39,092 basehttp "GET /post/jhgfdsdfghgfd/ HTTP/1.1" 200 3431
+WARNING 2024-12-04 13:40:39,301 log Not Found: /favicon.ico
+INFO 2024-12-04 13:40:39,304 basehttp - Broken pipe from ('127.0.0.1', 53808)
+INFO 2024-12-04 13:40:42,102 views Accès à la page d'accueil.
+INFO 2024-12-04 13:40:42,242 basehttp "GET / HTTP/1.1" 200 5638
+WARNING 2024-12-04 13:40:42,389 log Not Found: /favicon.ico
+INFO 2024-12-04 13:40:42,392 basehttp - Broken pipe from ('127.0.0.1', 53810)
+INFO 2024-12-04 13:42:26,012 basehttp "GET /post/hello/ HTTP/1.1" 200 3452
+WARNING 2024-12-04 13:42:26,217 log Not Found: /favicon.ico
+INFO 2024-12-04 13:42:26,219 basehttp - Broken pipe from ('127.0.0.1', 53818)
+INFO 2024-12-04 13:42:28,260 views Accès à la page d'accueil.
+INFO 2024-12-04 13:42:28,400 basehttp "GET / HTTP/1.1" 200 5638
+WARNING 2024-12-04 13:42:28,562 log Not Found: /favicon.ico
+INFO 2024-12-04 13:42:28,564 basehttp - Broken pipe from ('127.0.0.1', 53821)
+INFO 2024-12-04 13:54:27,161 views Accès à la page d'accueil.
+ERROR 2024-12-04 13:54:27,446 log Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'trans'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\code\cours-django\django-project\env\project_blog\blog\views.py", line 18, in home
+    return render(request, 'blog/home.html', {'posts': posts})
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\base.py", line 573, in invalid_block_tag
+    raise self.error(
+    ...<3 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 7: 'trans'. Did you forget to register or load this tag?
+ERROR 2024-12-04 13:54:27,458 basehttp "GET / HTTP/1.1" 500 161447
+WARNING 2024-12-04 13:54:27,653 log Not Found: /favicon.ico
+INFO 2024-12-04 13:54:27,659 basehttp - Broken pipe from ('127.0.0.1', 53896)
+INFO 2024-12-04 13:54:31,663 views Accès à la page d'accueil.
+ERROR 2024-12-04 13:54:31,822 log Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'trans'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\code\cours-django\django-project\env\project_blog\blog\views.py", line 18, in home
+    return render(request, 'blog/home.html', {'posts': posts})
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\base.py", line 573, in invalid_block_tag
+    raise self.error(
+    ...<3 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 7: 'trans'. Did you forget to register or load this tag?
+ERROR 2024-12-04 13:54:31,829 basehttp "GET / HTTP/1.1" 500 161316
+WARNING 2024-12-04 13:54:31,951 log Not Found: /favicon.ico
+INFO 2024-12-04 13:54:31,952 basehttp - Broken pipe from ('127.0.0.1', 53898)
+INFO 2024-12-04 13:56:04,617 views Accès à la page d'accueil.
+ERROR 2024-12-04 13:56:04,840 log Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'trans'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\code\cours-django\django-project\env\project_blog\blog\views.py", line 18, in home
+    return render(request, 'blog/home.html', {'posts': posts})
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\base.py", line 573, in invalid_block_tag
+    raise self.error(
+    ...<3 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 7: 'trans'. Did you forget to register or load this tag?
+ERROR 2024-12-04 13:56:04,847 basehttp "GET / HTTP/1.1" 500 161912
+WARNING 2024-12-04 13:56:05,007 log Not Found: /favicon.ico
+INFO 2024-12-04 13:56:05,008 basehttp - Broken pipe from ('127.0.0.1', 53903)
+INFO 2024-12-04 13:56:16,346 views Accès à la page d'accueil.
+INFO 2024-12-04 13:56:16,435 basehttp "GET / HTTP/1.1" 200 5617
+WARNING 2024-12-04 13:56:16,532 log Not Found: /favicon.ico
+INFO 2024-12-04 13:56:16,533 basehttp - Broken pipe from ('127.0.0.1', 53906)
+INFO 2024-12-04 13:58:29,963 autoreload C:\code\cours-django\django-project\env\project_blog\project_blog\settings.py changed, reloading.
+INFO 2024-12-04 13:58:31,411 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 13:58:46,243 views Accès à la page d'accueil.
+ERROR 2024-12-04 13:58:46,470 log Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\code\cours-django\django-project\env\project_blog\blog\views.py", line 18, in home
+    return render(request, 'blog/home.html', {'posts': posts})
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'set_language' not found. 'set_language' is not a valid view function or pattern name.
+ERROR 2024-12-04 13:58:46,481 basehttp "GET / HTTP/1.1" 500 119482
+WARNING 2024-12-04 13:58:46,620 log Not Found: /favicon.ico
+INFO 2024-12-04 13:58:46,622 basehttp - Broken pipe from ('127.0.0.1', 53923)
+INFO 2024-12-04 13:59:25,802 views Accès à la page d'accueil.
+INFO 2024-12-04 13:59:25,952 basehttp "GET / HTTP/1.1" 200 5617
+WARNING 2024-12-04 13:59:26,140 log Not Found: /favicon.ico
+INFO 2024-12-04 13:59:26,141 basehttp - Broken pipe from ('127.0.0.1', 53929)
+INFO 2024-12-04 13:59:38,037 views Accès à la page d'accueil.
+INFO 2024-12-04 13:59:38,174 basehttp "GET /?lang=fr HTTP/1.1" 200 5617
+INFO 2024-12-04 14:00:55,669 views Accès à la page d'accueil.
+ERROR 2024-12-04 14:00:55,824 log Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\code\cours-django\django-project\env\project_blog\blog\views.py", line 18, in home
+    return render(request, 'blog/home.html', {'posts': posts})
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'set_language' not found. 'set_language' is not a valid view function or pattern name.
+ERROR 2024-12-04 14:00:55,830 basehttp "GET /?lang=fr HTTP/1.1" 500 120185
+WARNING 2024-12-04 14:00:55,993 log Not Found: /favicon.ico
+INFO 2024-12-04 14:00:55,995 basehttp - Broken pipe from ('127.0.0.1', 53932)
+INFO 2024-12-04 14:01:39,761 autoreload C:\code\cours-django\django-project\env\project_blog\project_blog\settings.py changed, reloading.
+INFO 2024-12-04 14:02:02,351 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 14:02:05,101 views Accès à la page d'accueil.
+ERROR 2024-12-04 14:02:05,235 log Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\code\cours-django\django-project\env\project_blog\blog\views.py", line 18, in home
+    return render(request, 'blog/home.html', {'posts': posts})
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'set_language' not found. 'set_language' is not a valid view function or pattern name.
+ERROR 2024-12-04 14:02:05,242 basehttp "GET /?lang=fr HTTP/1.1" 500 120182
+WARNING 2024-12-04 14:02:05,333 log Not Found: /favicon.ico
+INFO 2024-12-04 14:02:05,334 basehttp - Broken pipe from ('127.0.0.1', 53945)
+INFO 2024-12-04 14:02:07,280 views Accès à la page d'accueil.
+ERROR 2024-12-04 14:02:07,426 log Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\code\cours-django\django-project\env\project_blog\blog\views.py", line 18, in home
+    return render(request, 'blog/home.html', {'posts': posts})
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'set_language' not found. 'set_language' is not a valid view function or pattern name.
+ERROR 2024-12-04 14:02:07,431 basehttp "GET /?lang=fr HTTP/1.1" 500 120182
+WARNING 2024-12-04 14:02:07,553 log Not Found: /favicon.ico
+INFO 2024-12-04 14:02:07,555 basehttp - Broken pipe from ('127.0.0.1', 53948)
+INFO 2024-12-04 14:02:49,959 autoreload C:\code\cours-django\django-project\env\project_blog\project_blog\urls.py changed, reloading.
+INFO 2024-12-04 14:02:51,005 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 14:02:59,707 autoreload C:\code\cours-django\django-project\env\project_blog\project_blog\urls.py changed, reloading.
+INFO 2024-12-04 14:03:00,780 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 14:03:03,052 views Accès à la page d'accueil.
+INFO 2024-12-04 14:03:03,204 basehttp "GET /?lang=fr HTTP/1.1" 200 3768
+WARNING 2024-12-04 14:03:03,330 log Not Found: /favicon.ico
+INFO 2024-12-04 14:03:03,332 basehttp - Broken pipe from ('127.0.0.1', 53956)
+INFO 2024-12-04 14:03:14,462 views Accès à la page d'accueil.
+INFO 2024-12-04 14:03:14,559 basehttp "GET /?lang=fr HTTP/1.1" 200 5625
+WARNING 2024-12-04 14:03:14,666 log Not Found: /favicon.ico
+INFO 2024-12-04 14:03:14,668 basehttp - Broken pipe from ('127.0.0.1', 53958)
+INFO 2024-12-04 14:03:19,582 views Accès à la page d'accueil.
+INFO 2024-12-04 14:03:19,683 basehttp "GET / HTTP/1.1" 200 5625
+WARNING 2024-12-04 14:03:19,770 log Not Found: /favicon.ico
+INFO 2024-12-04 14:03:19,772 basehttp - Broken pipe from ('127.0.0.1', 53962)
+INFO 2024-12-04 14:03:45,519 views Accès à la page d'accueil.
+INFO 2024-12-04 14:03:45,664 basehttp "GET /?lang=fr HTTP/1.1" 200 5625
+WARNING 2024-12-04 14:03:45,829 log Not Found: /favicon.ico
+INFO 2024-12-04 14:03:45,830 basehttp - Broken pipe from ('127.0.0.1', 53966)
+INFO 2024-12-04 14:03:48,831 basehttp "GET /post/jhgfdsdfghgfd/ HTTP/1.1" 200 3431
+WARNING 2024-12-04 14:03:48,983 log Not Found: /favicon.ico
+INFO 2024-12-04 14:03:48,984 basehttp - Broken pipe from ('127.0.0.1', 53968)
+INFO 2024-12-04 14:03:50,333 views Accès à la page d'accueil.
+INFO 2024-12-04 14:03:50,467 basehttp "GET / HTTP/1.1" 200 5625
+INFO 2024-12-04 14:04:55,966 views Accès à la page d'accueil.
+INFO 2024-12-04 14:04:56,081 basehttp "GET / HTTP/1.1" 200 5692
+WARNING 2024-12-04 14:04:56,164 log Not Found: /favicon.ico
+INFO 2024-12-04 14:04:56,165 basehttp - Broken pipe from ('127.0.0.1', 53970)
+INFO 2024-12-04 14:05:07,665 views Accès à la page d'accueil.
+INFO 2024-12-04 14:05:07,796 basehttp "GET / HTTP/1.1" 200 6228
+WARNING 2024-12-04 14:05:07,907 log Not Found: /favicon.ico
+INFO 2024-12-04 14:05:07,908 basehttp - Broken pipe from ('127.0.0.1', 53978)
+INFO 2024-12-04 14:05:10,389 basehttp "POST /set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 14:05:10,406 views Accès à la page d'accueil.
+INFO 2024-12-04 14:05:10,501 basehttp "GET / HTTP/1.1" 200 6228
+INFO 2024-12-04 14:05:12,578 basehttp "POST /set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 14:05:12,601 views Accès à la page d'accueil.
+INFO 2024-12-04 14:05:12,684 basehttp "GET / HTTP/1.1" 200 6228
+WARNING 2024-12-04 14:05:12,768 log Not Found: /favicon.ico
+INFO 2024-12-04 14:05:12,769 basehttp - Broken pipe from ('127.0.0.1', 53980)
+INFO 2024-12-04 14:05:22,938 basehttp "POST /set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 14:05:22,957 views Accès à la page d'accueil.
+INFO 2024-12-04 14:05:23,102 basehttp "GET / HTTP/1.1" 200 6228
+INFO 2024-12-04 14:05:37,141 autoreload C:\code\cours-django\django-project\env\project_blog\project_blog\settings.py changed, reloading.
+INFO 2024-12-04 14:05:38,368 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 14:05:38,966 views Accès à la page d'accueil.
+INFO 2024-12-04 14:05:39,135 basehttp "GET / HTTP/1.1" 200 6228
+WARNING 2024-12-04 14:05:39,232 log Not Found: /favicon.ico
+INFO 2024-12-04 14:05:39,233 basehttp - Broken pipe from ('127.0.0.1', 53990)
+INFO 2024-12-04 14:05:40,833 basehttp "POST /set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 14:05:40,850 views Accès à la page d'accueil.
+INFO 2024-12-04 14:05:40,946 basehttp "GET / HTTP/1.1" 200 6228
+WARNING 2024-12-04 14:05:41,032 log Not Found: /favicon.ico
+INFO 2024-12-04 14:05:41,033 basehttp - Broken pipe from ('127.0.0.1', 53992)
+INFO 2024-12-04 14:06:38,759 autoreload C:\code\cours-django\django-project\env\project_blog\project_blog\urls.py changed, reloading.
+INFO 2024-12-04 14:06:39,844 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 14:06:41,358 autoreload C:\code\cours-django\django-project\env\project_blog\project_blog\urls.py changed, reloading.
+INFO 2024-12-04 14:06:42,551 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 14:06:49,232 autoreload C:\code\cours-django\django-project\env\project_blog\project_blog\urls.py changed, reloading.
+INFO 2024-12-04 14:06:50,226 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 14:07:39,203 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 14:10:21,160 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 14:10:27,176 views Accès à la page d'accueil.
+INFO 2024-12-04 14:10:27,278 basehttp "GET / HTTP/1.1" 200 6231
+WARNING 2024-12-04 14:10:27,448 log Not Found: /favicon.ico
+INFO 2024-12-04 14:10:27,448 basehttp - Broken pipe from ('127.0.0.1', 54044)
+INFO 2024-12-04 14:10:29,495 basehttp "POST /fr/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 14:10:29,513 views Accès à la page d'accueil.
+INFO 2024-12-04 14:10:29,717 basehttp "GET / HTTP/1.1" 200 6231
+INFO 2024-12-04 14:10:31,160 basehttp "POST /fr/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 14:10:31,170 views Accès à la page d'accueil.
+INFO 2024-12-04 14:10:31,249 basehttp "GET / HTTP/1.1" 200 6231
+WARNING 2024-12-04 14:10:31,319 log Not Found: /favicon.ico
+INFO 2024-12-04 14:10:31,320 basehttp - Broken pipe from ('127.0.0.1', 54046)
+INFO 2024-12-04 14:10:32,307 basehttp "POST /fr/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 14:10:32,318 views Accès à la page d'accueil.
+INFO 2024-12-04 14:10:32,405 basehttp "GET / HTTP/1.1" 200 6231
+INFO 2024-12-04 14:12:24,308 autoreload C:\code\cours-django\django-project\env\project_blog\project_blog\settings.py changed, reloading.
+INFO 2024-12-04 14:12:25,588 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 14:12:26,961 views Accès à la page d'accueil.
+INFO 2024-12-04 14:12:27,113 basehttp "GET / HTTP/1.1" 200 6175
+WARNING 2024-12-04 14:12:27,214 log Not Found: /favicon.ico
+INFO 2024-12-04 14:12:27,216 basehttp - Broken pipe from ('127.0.0.1', 54065)
+INFO 2024-12-04 14:12:28,477 basehttp "POST /fr/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 14:12:28,485 views Accès à la page d'accueil.
+INFO 2024-12-04 14:12:28,570 basehttp "GET / HTTP/1.1" 200 6175
+WARNING 2024-12-04 14:12:28,649 log Not Found: /favicon.ico
+INFO 2024-12-04 14:12:28,651 basehttp - Broken pipe from ('127.0.0.1', 54067)
+INFO 2024-12-04 15:15:35,730 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:15:39,126 views Accès à la page d'accueil.
+INFO 2024-12-04 15:15:39,299 basehttp "GET / HTTP/1.1" 200 6175
+WARNING 2024-12-04 15:15:39,532 log Not Found: /favicon.ico
+INFO 2024-12-04 15:15:39,534 basehttp - Broken pipe from ('127.0.0.1', 55023)
+INFO 2024-12-04 15:15:42,591 basehttp "GET /post/jhgfdsdfghgfd/ HTTP/1.1" 200 3431
+WARNING 2024-12-04 15:15:42,681 log Not Found: /favicon.ico
+INFO 2024-12-04 15:15:42,682 basehttp - Broken pipe from ('127.0.0.1', 55025)
+INFO 2024-12-04 15:15:45,298 views Accès à la page d'accueil.
+INFO 2024-12-04 15:15:45,408 basehttp "GET / HTTP/1.1" 200 6175
+INFO 2024-12-04 15:15:54,861 basehttp "GET /post/admin/ HTTP/1.1" 200 3412
+WARNING 2024-12-04 15:15:55,049 log Not Found: /favicon.ico
+INFO 2024-12-04 15:15:55,051 basehttp - Broken pipe from ('127.0.0.1', 55029)
+INFO 2024-12-04 15:15:56,117 views Accès à la page d'accueil.
+INFO 2024-12-04 15:15:56,279 basehttp "GET / HTTP/1.1" 200 6175
+WARNING 2024-12-04 15:15:56,463 log Not Found: /favicon.ico
+INFO 2024-12-04 15:15:56,465 basehttp - Broken pipe from ('127.0.0.1', 55036)
+INFO 2024-12-04 15:16:05,010 basehttp "GET /post/quickkkkk/ HTTP/1.1" 200 3627
+INFO 2024-12-04 15:16:06,730 views Accès à la page d'accueil.
+INFO 2024-12-04 15:16:06,842 basehttp "GET / HTTP/1.1" 200 6175
+WARNING 2024-12-04 15:16:06,984 log Not Found: /favicon.ico
+INFO 2024-12-04 15:16:06,988 basehttp - Broken pipe from ('127.0.0.1', 55040)
+INFO 2024-12-04 15:16:51,359 basehttp "GET /post/jhgfdsdfghgfd/ HTTP/1.1" 200 3431
+INFO 2024-12-04 15:16:52,315 views Accès à la page d'accueil.
+INFO 2024-12-04 15:16:52,422 basehttp "GET / HTTP/1.1" 200 6175
+WARNING 2024-12-04 15:16:52,521 log Not Found: /favicon.ico
+INFO 2024-12-04 15:16:52,522 basehttp - Broken pipe from ('127.0.0.1', 55049)
+INFO 2024-12-04 15:29:27,874 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:29:29,831 views Accès à la page d'accueil.
+INFO 2024-12-04 15:29:29,954 basehttp "GET / HTTP/1.1" 200 6175
+WARNING 2024-12-04 15:29:30,096 log Not Found: /favicon.ico
+INFO 2024-12-04 15:29:30,097 basehttp - Broken pipe from ('127.0.0.1', 55322)
+INFO 2024-12-04 15:29:31,968 basehttp "POST /fr/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 15:29:31,982 views Accès à la page d'accueil.
+INFO 2024-12-04 15:29:32,092 basehttp "GET / HTTP/1.1" 200 6175
+WARNING 2024-12-04 15:29:32,215 log Not Found: /favicon.ico
+INFO 2024-12-04 15:29:32,216 basehttp - Broken pipe from ('127.0.0.1', 55326)
+INFO 2024-12-04 15:30:55,966 views Accès à la page d'accueil.
+INFO 2024-12-04 15:30:56,037 basehttp "GET / HTTP/1.1" 200 6175
+WARNING 2024-12-04 15:30:56,106 log Not Found: /favicon.ico
+INFO 2024-12-04 15:30:56,107 basehttp - Broken pipe from ('127.0.0.1', 55341)
+INFO 2024-12-04 15:30:58,191 basehttp "POST /fr/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 15:30:58,202 views Accès à la page d'accueil.
+INFO 2024-12-04 15:30:58,284 basehttp "GET / HTTP/1.1" 200 6175
+INFO 2024-12-04 15:30:59,710 basehttp "POST /fr/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 15:30:59,727 views Accès à la page d'accueil.
+INFO 2024-12-04 15:30:59,819 basehttp "GET / HTTP/1.1" 200 6175
+INFO 2024-12-04 15:31:08,702 views Accès à la page d'accueil.
+INFO 2024-12-04 15:31:08,958 basehttp "GET / HTTP/1.1" 200 6175
+INFO 2024-12-04 15:31:11,050 basehttp "POST /fr/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 15:31:11,060 views Accès à la page d'accueil.
+INFO 2024-12-04 15:31:11,132 basehttp "GET / HTTP/1.1" 200 6175
+WARNING 2024-12-04 15:31:11,199 log Not Found: /favicon.ico
+INFO 2024-12-04 15:31:11,200 basehttp - Broken pipe from ('127.0.0.1', 55343)
+INFO 2024-12-04 15:33:16,362 views Accès à la page d'accueil.
+INFO 2024-12-04 15:33:16,446 basehttp "GET / HTTP/1.1" 200 6175
+WARNING 2024-12-04 15:33:16,603 log Not Found: /favicon.ico
+INFO 2024-12-04 15:33:16,604 basehttp - Broken pipe from ('127.0.0.1', 55358)
+INFO 2024-12-04 15:33:17,812 basehttp "POST /fr/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 15:33:17,826 views Accès à la page d'accueil.
+INFO 2024-12-04 15:33:17,947 basehttp "GET / HTTP/1.1" 200 6175
+WARNING 2024-12-04 15:33:18,069 log Not Found: /favicon.ico
+INFO 2024-12-04 15:33:18,070 basehttp - Broken pipe from ('127.0.0.1', 55361)
+INFO 2024-12-04 15:33:19,461 basehttp "POST /fr/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 15:33:19,479 views Accès à la page d'accueil.
+INFO 2024-12-04 15:33:19,575 basehttp "GET / HTTP/1.1" 200 6175
+INFO 2024-12-04 15:33:53,643 autoreload C:\code\cours-django\django-project\env\project_blog\project_blog\settings.py changed, reloading.
+INFO 2024-12-04 15:33:54,698 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:33:56,049 views Accès à la page d'accueil.
+INFO 2024-12-04 15:33:56,183 basehttp "GET / HTTP/1.1" 200 6175
+INFO 2024-12-04 15:33:57,670 basehttp "POST /fr/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 15:33:57,683 views Accès à la page d'accueil.
+INFO 2024-12-04 15:33:57,803 basehttp "GET / HTTP/1.1" 200 6175
+WARNING 2024-12-04 15:33:57,915 log Not Found: /favicon.ico
+INFO 2024-12-04 15:33:57,917 basehttp - Broken pipe from ('127.0.0.1', 55377)
+INFO 2024-12-04 15:33:58,971 basehttp "POST /fr/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 15:33:58,981 views Accès à la page d'accueil.
+INFO 2024-12-04 15:33:59,060 basehttp "GET / HTTP/1.1" 200 6175
+INFO 2024-12-04 15:34:03,923 autoreload C:\code\cours-django\django-project\env\project_blog\project_blog\settings.py changed, reloading.
+INFO 2024-12-04 15:34:05,029 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:37:58,073 views Accès à la page d'accueil.
+INFO 2024-12-04 15:37:58,207 basehttp "GET / HTTP/1.1" 200 6201
+WARNING 2024-12-04 15:37:58,316 log Not Found: /favicon.ico
+INFO 2024-12-04 15:37:58,319 basehttp - Broken pipe from ('127.0.0.1', 55405)
+INFO 2024-12-04 15:38:01,277 basehttp "POST /fr/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 15:38:01,297 views Accès à la page d'accueil.
+INFO 2024-12-04 15:38:01,399 basehttp "GET / HTTP/1.1" 200 6201
+WARNING 2024-12-04 15:38:01,477 log Not Found: /favicon.ico
+INFO 2024-12-04 15:38:01,478 basehttp - Broken pipe from ('127.0.0.1', 55407)
+INFO 2024-12-04 15:38:03,639 basehttp "POST /fr/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 15:38:03,653 views Accès à la page d'accueil.
+INFO 2024-12-04 15:38:03,865 basehttp "GET / HTTP/1.1" 200 6201
+INFO 2024-12-04 15:38:12,466 autoreload C:\code\cours-django\django-project\env\project_blog\project_blog\settings.py changed, reloading.
+INFO 2024-12-04 15:38:14,107 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:38:14,475 views Accès à la page d'accueil.
+INFO 2024-12-04 15:38:14,624 basehttp "GET / HTTP/1.1" 200 6201
+WARNING 2024-12-04 15:38:14,733 log Not Found: /favicon.ico
+INFO 2024-12-04 15:38:14,735 basehttp - Broken pipe from ('127.0.0.1', 55415)
+INFO 2024-12-04 15:38:15,319 views Accès à la page d'accueil.
+INFO 2024-12-04 15:38:15,429 basehttp "GET / HTTP/1.1" 200 6201
+INFO 2024-12-04 15:38:24,974 basehttp "GET /post/jhgfdsdfghgfd/ HTTP/1.1" 200 3431
+INFO 2024-12-04 15:38:29,351 autoreload C:\code\cours-django\django-project\env\project_blog\project_blog\settings.py changed, reloading.
+INFO 2024-12-04 15:38:30,338 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:38:41,333 basehttp "POST /fr/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 15:38:41,344 views Accès à la page d'accueil.
+INFO 2024-12-04 15:38:41,500 basehttp "GET / HTTP/1.1" 200 6201
+WARNING 2024-12-04 15:38:41,624 log Not Found: /favicon.ico
+INFO 2024-12-04 15:38:41,625 basehttp - Broken pipe from ('127.0.0.1', 55427)
+INFO 2024-12-04 15:38:42,607 basehttp "POST /fr/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 15:38:42,628 views Accès à la page d'accueil.
+INFO 2024-12-04 15:38:42,756 basehttp "GET / HTTP/1.1" 200 6201
+WARNING 2024-12-04 15:38:42,906 log Not Found: /favicon.ico
+INFO 2024-12-04 15:38:42,908 basehttp - Broken pipe from ('127.0.0.1', 55429)
+INFO 2024-12-04 15:56:41,404 autoreload C:\code\cours-django\django-project\env\project_blog\project_blog\settings.py changed, reloading.
+INFO 2024-12-04 15:56:42,911 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:56:43,232 views Accès à la page d'accueil.
+INFO 2024-12-04 15:56:43,365 basehttp "GET / HTTP/1.1" 200 6201
+WARNING 2024-12-04 15:56:43,559 log Not Found: /favicon.ico
+INFO 2024-12-04 15:56:43,560 basehttp - Broken pipe from ('127.0.0.1', 55598)
+INFO 2024-12-04 15:56:43,889 views Accès à la page d'accueil.
+INFO 2024-12-04 15:56:44,010 basehttp "GET / HTTP/1.1" 200 6201
+WARNING 2024-12-04 15:56:44,109 log Not Found: /favicon.ico
+INFO 2024-12-04 15:56:44,111 basehttp - Broken pipe from ('127.0.0.1', 55600)
+INFO 2024-12-04 15:56:45,064 basehttp "POST /fr/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 15:56:45,078 views Accès à la page d'accueil.
+INFO 2024-12-04 15:56:45,177 basehttp "GET / HTTP/1.1" 200 6201
+INFO 2024-12-04 15:57:08,635 autoreload C:\code\cours-django\django-project\env\project_blog\project_blog\settings.py changed, reloading.
+INFO 2024-12-04 15:57:09,803 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:57:25,895 autoreload C:\code\cours-django\django-project\env\project_blog\blog\views.py changed, reloading.
+INFO 2024-12-04 15:57:27,257 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:57:31,118 autoreload C:\code\cours-django\django-project\env\project_blog\blog\views.py changed, reloading.
+INFO 2024-12-04 15:57:32,150 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:57:35,685 autoreload C:\code\cours-django\django-project\env\project_blog\blog\views.py changed, reloading.
+INFO 2024-12-04 15:57:37,113 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:57:47,187 autoreload C:\code\cours-django\django-project\env\project_blog\blog\views.py changed, reloading.
+INFO 2024-12-04 15:57:48,107 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:57:50,362 autoreload C:\code\cours-django\django-project\env\project_blog\blog\views.py changed, reloading.
+INFO 2024-12-04 15:57:51,365 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:57:57,157 autoreload C:\code\cours-django\django-project\env\project_blog\blog\views.py changed, reloading.
+INFO 2024-12-04 15:57:58,215 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:58:41,030 autoreload C:\code\cours-django\django-project\env\project_blog\blog\views.py changed, reloading.
+INFO 2024-12-04 15:58:42,240 autoreload Watching for file changes with StatReloader
