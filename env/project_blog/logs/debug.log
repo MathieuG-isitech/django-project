@@ -1,0 +1,327 @@
+INFO 2024-12-04 10:31:56,274 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 10:32:25,263 basehttp "GET /post/quickkkkk/ HTTP/1.1" 200 3632
+INFO 2024-12-04 11:13:02,879 basehttp "GET /post/quickkkkk/ HTTP/1.1" 200 3632
+WARNING 2024-12-04 11:13:02,980 log Not Found: /favicon.ico
+INFO 2024-12-04 11:13:02,981 basehttp - Broken pipe from ('127.0.0.1', 52153)
+INFO 2024-12-04 11:13:06,806 views Accès à la page d'accueil.
+INFO 2024-12-04 11:13:06,854 basehttp "GET / HTTP/1.1" 200 5185
+INFO 2024-12-04 11:13:07,600 basehttp "GET /post/jhgfdsdfghgfd/ HTTP/1.1" 200 3431
+INFO 2024-12-04 11:13:12,857 views Accès à la page d'accueil.
+INFO 2024-12-04 11:13:12,902 basehttp "GET / HTTP/1.1" 200 5185
+WARNING 2024-12-04 11:13:12,954 log Not Found: /favicon.ico
+INFO 2024-12-04 11:13:12,955 basehttp - Broken pipe from ('127.0.0.1', 52155)
+INFO 2024-12-04 11:13:24,431 basehttp "GET /post/admin/ HTTP/1.1" 200 3412
+INFO 2024-12-04 11:13:35,298 views Accès à la page d'accueil.
+INFO 2024-12-04 11:13:35,336 basehttp "GET / HTTP/1.1" 200 5185
+WARNING 2024-12-04 11:13:35,373 log Not Found: /favicon.ico
+INFO 2024-12-04 11:13:35,374 basehttp - Broken pipe from ('127.0.0.1', 52161)
+INFO 2024-12-04 11:13:46,161 basehttp "GET /post/jhgfdsdfghgfd/ HTTP/1.1" 200 3431
+WARNING 2024-12-04 11:13:46,200 log Not Found: /favicon.ico
+INFO 2024-12-04 11:13:46,201 basehttp - Broken pipe from ('127.0.0.1', 52168)
+INFO 2024-12-04 11:13:47,183 views Accès à la page d'accueil.
+INFO 2024-12-04 11:13:47,226 basehttp "GET / HTTP/1.1" 200 5185
+WARNING 2024-12-04 11:13:47,273 log Not Found: /favicon.ico
+INFO 2024-12-04 11:13:47,274 basehttp - Broken pipe from ('127.0.0.1', 52170)
+INFO 2024-12-04 11:13:48,165 basehttp "GET /post/gggggggggggggggg/ HTTP/1.1" 200 3627
+INFO 2024-12-04 11:13:55,357 views Accès à la page d'accueil.
+INFO 2024-12-04 11:13:55,399 basehttp "GET / HTTP/1.1" 200 5185
+INFO 2024-12-04 11:13:57,994 basehttp "GET /post/jghfd/ HTTP/1.1" 200 3437
+WARNING 2024-12-04 11:13:58,034 log Not Found: /favicon.ico
+INFO 2024-12-04 11:13:58,035 basehttp - Broken pipe from ('127.0.0.1', 52172)
+INFO 2024-12-04 11:18:43,750 views Accès à la page d'accueil.
+INFO 2024-12-04 11:18:43,866 basehttp "GET / HTTP/1.1" 200 5185
+WARNING 2024-12-04 11:18:43,973 log Not Found: /favicon.ico
+INFO 2024-12-04 11:18:43,975 basehttp - Broken pipe from ('127.0.0.1', 52283)
+INFO 2024-12-04 11:18:46,857 views Accès à la liste des catégories.
+INFO 2024-12-04 11:18:46,909 basehttp "GET /categories/ HTTP/1.1" 200 4689
+INFO 2024-12-04 11:18:50,119 basehttp "GET /categories/create/ HTTP/1.1" 200 2465
+WARNING 2024-12-04 11:18:50,298 log Not Found: /favicon.ico
+INFO 2024-12-04 11:18:50,301 basehttp - Broken pipe from ('127.0.0.1', 52285)
+INFO 2024-12-04 11:19:01,140 views Requête POST reçue pour créer une catégorie.
+ERROR 2024-12-04 11:19:01,602 log Internal Server Error: /categories/create/
+Traceback (most recent call last):
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\psycopg\cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+psycopg.errors.UniqueViolation: la valeur d'une clé dupliquée rompt la contrainte unique « blog_category_slug_key »
+DETAIL:  La clé « (slug)=() » existe déjà.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\code\cours-django\django-project\env\project_blog\blog\views.py", line 172, in category_create
+    Category.objects.create(nom=nom, description=description)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\db\models\base.py", line 891, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\db\models\base.py", line 997, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\db\models\base.py", line 1160, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, fields, returning_fields, raw
+    )
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\db\models\base.py", line 1201, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\psycopg\cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+django.db.utils.IntegrityError: la valeur d'une clé dupliquée rompt la contrainte unique « blog_category_slug_key »
+DETAIL:  La clé « (slug)=() » existe déjà.
+ERROR 2024-12-04 11:19:01,621 basehttp "POST /categories/create/ HTTP/1.1" 500 163639
+INFO 2024-12-04 11:19:41,287 basehttp "GET /categories/create/ HTTP/1.1" 200 2465
+WARNING 2024-12-04 11:19:41,472 log Not Found: /favicon.ico
+INFO 2024-12-04 11:19:41,474 basehttp - Broken pipe from ('127.0.0.1', 52290)
+INFO 2024-12-04 11:19:46,586 views Requête POST reçue pour créer une catégorie.
+ERROR 2024-12-04 11:19:46,679 log Internal Server Error: /categories/create/
+Traceback (most recent call last):
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\psycopg\cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+psycopg.errors.UniqueViolation: la valeur d'une clé dupliquée rompt la contrainte unique « blog_category_slug_key »
+DETAIL:  La clé « (slug)=() » existe déjà.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\code\cours-django\django-project\env\project_blog\blog\views.py", line 172, in category_create
+    Category.objects.create(nom=nom, description=description)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\db\models\base.py", line 891, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\db\models\base.py", line 997, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\db\models\base.py", line 1160, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, fields, returning_fields, raw
+    )
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\db\models\base.py", line 1201, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\code\cours-django\django-project\env\Lib\site-packages\psycopg\cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+django.db.utils.IntegrityError: la valeur d'une clé dupliquée rompt la contrainte unique « blog_category_slug_key »
+DETAIL:  La clé « (slug)=() » existe déjà.
+ERROR 2024-12-04 11:19:46,689 basehttp "POST /categories/create/ HTTP/1.1" 500 163648
+WARNING 2024-12-04 11:19:46,881 log Not Found: /favicon.ico
+INFO 2024-12-04 11:19:46,883 basehttp - Broken pipe from ('127.0.0.1', 52374)
+INFO 2024-12-04 11:22:51,052 autoreload C:\code\cours-django\django-project\env\project_blog\blog\views.py changed, reloading.
+INFO 2024-12-04 11:22:53,058 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 11:22:56,665 views Accès à la page d'accueil.
+INFO 2024-12-04 11:22:56,805 basehttp "GET / HTTP/1.1" 200 5185
+WARNING 2024-12-04 11:22:56,905 log Not Found: /favicon.ico
+INFO 2024-12-04 11:22:56,907 basehttp - Broken pipe from ('127.0.0.1', 52466)
+INFO 2024-12-04 11:22:58,485 views Accès à la liste des catégories.
+INFO 2024-12-04 11:22:58,495 basehttp "GET /categories/ HTTP/1.1" 200 4689
+WARNING 2024-12-04 11:22:58,586 log Not Found: /favicon.ico
+INFO 2024-12-04 11:22:58,587 basehttp - Broken pipe from ('127.0.0.1', 52468)
+INFO 2024-12-04 11:22:59,437 basehttp "GET /categories/create/ HTTP/1.1" 200 2465
+INFO 2024-12-04 11:23:06,034 views Catégorie créée : Cuisine (slug: cuisine)
+INFO 2024-12-04 11:23:06,035 basehttp "POST /categories/create/ HTTP/1.1" 302 0
+INFO 2024-12-04 11:23:06,153 views Accès à la liste des catégories.
+INFO 2024-12-04 11:23:06,160 basehttp "GET /categories/ HTTP/1.1" 200 5465
+INFO 2024-12-04 11:23:29,663 views Accès à la page d'accueil.
+INFO 2024-12-04 11:23:29,792 basehttp "GET / HTTP/1.1" 200 5185
+WARNING 2024-12-04 11:23:30,003 log Not Found: /favicon.ico
+INFO 2024-12-04 11:23:30,005 basehttp - Broken pipe from ('127.0.0.1', 52470)
+INFO 2024-12-04 11:23:30,777 basehttp "GET /post/quickkkkk/ HTTP/1.1" 200 3632
+WARNING 2024-12-04 11:23:30,930 log Not Found: /favicon.ico
+INFO 2024-12-04 11:23:30,932 basehttp - Broken pipe from ('127.0.0.1', 52476)
+INFO 2024-12-04 11:23:32,443 views Accès à la liste des catégories.
+INFO 2024-12-04 11:23:32,453 basehttp "GET /categories/ HTTP/1.1" 200 5465
+INFO 2024-12-04 11:23:34,875 views Tentative de suppression de la catégorie ID 2.
+INFO 2024-12-04 11:23:34,898 views Catégorie ID 2 supprimée avec succès.
+INFO 2024-12-04 11:23:34,901 basehttp "POST /categories/delete/2/ HTTP/1.1" 302 0
+INFO 2024-12-04 11:23:35,027 views Accès à la liste des catégories.
+INFO 2024-12-04 11:23:35,035 basehttp "GET /categories/ HTTP/1.1" 200 4687
+INFO 2024-12-04 11:23:36,359 views Accès à la page d'accueil.
+INFO 2024-12-04 11:23:36,496 basehttp "GET / HTTP/1.1" 200 5185
+WARNING 2024-12-04 11:23:36,654 log Not Found: /favicon.ico
+INFO 2024-12-04 11:23:36,656 basehttp - Broken pipe from ('127.0.0.1', 52478)
+INFO 2024-12-04 11:23:37,486 basehttp "GET /post/jhgfdsdfghgfd/ HTTP/1.1" 200 3431
+INFO 2024-12-04 11:23:39,840 views Accès à la page d'accueil.
+INFO 2024-12-04 11:23:39,955 basehttp "GET / HTTP/1.1" 200 5185
+INFO 2024-12-04 11:23:41,598 basehttp "GET /post/gggggggggggggggg/ HTTP/1.1" 200 3627
+WARNING 2024-12-04 11:23:41,708 log Not Found: /favicon.ico
+INFO 2024-12-04 11:23:41,711 basehttp - Broken pipe from ('127.0.0.1', 52483)
+INFO 2024-12-04 11:23:44,944 views Accès à la liste des catégories.
+INFO 2024-12-04 11:23:44,955 basehttp "GET /categories/ HTTP/1.1" 200 4687
+INFO 2024-12-04 11:23:46,343 basehttp "GET /categories/create/ HTTP/1.1" 200 2465
+WARNING 2024-12-04 11:23:46,512 log Not Found: /favicon.ico
+INFO 2024-12-04 11:23:46,515 basehttp - Broken pipe from ('127.0.0.1', 52489)
+INFO 2024-12-04 11:23:52,115 views Catégorie créée : Vehicules (slug: vehicules)
+INFO 2024-12-04 11:23:52,117 basehttp "POST /categories/create/ HTTP/1.1" 302 0
+INFO 2024-12-04 11:23:52,246 views Accès à la liste des catégories.
+INFO 2024-12-04 11:23:52,258 basehttp "GET /categories/ HTTP/1.1" 200 5467
+INFO 2024-12-04 11:23:54,572 views Accès à la page d'accueil.
+INFO 2024-12-04 11:23:54,714 basehttp "GET / HTTP/1.1" 200 5185
+WARNING 2024-12-04 11:23:54,875 log Not Found: /favicon.ico
+INFO 2024-12-04 11:23:54,877 basehttp - Broken pipe from ('127.0.0.1', 52492)
+INFO 2024-12-04 11:23:57,193 basehttp "GET /post/jhgfdsdfghgfd/ HTTP/1.1" 200 3431
+INFO 2024-12-04 11:23:58,380 views Accès à la page d'accueil.
+INFO 2024-12-04 11:23:58,488 basehttp "GET / HTTP/1.1" 200 5185
+WARNING 2024-12-04 11:23:58,584 log Not Found: /favicon.ico
+INFO 2024-12-04 11:23:58,586 basehttp - Broken pipe from ('127.0.0.1', 52498)
+INFO 2024-12-04 11:23:59,867 basehttp "GET /post-form/ HTTP/1.1" 200 3725
+INFO 2024-12-04 11:24:06,102 views Requête POST reçue pour créer un post.
+INFO 2024-12-04 11:24:06,118 views Post créé avec succès : zadefnh,j;,hngbf par mathieu.
+INFO 2024-12-04 11:24:06,120 basehttp "POST /post-form/ HTTP/1.1" 302 0
+INFO 2024-12-04 11:24:06,135 views Accès à la page d'accueil.
+INFO 2024-12-04 11:24:06,369 basehttp "GET / HTTP/1.1" 200 5638
+INFO 2024-12-04 11:24:08,365 basehttp "GET /post/zadefnhjhngbf/ HTTP/1.1" 200 3433
+INFO 2024-12-04 11:24:10,597 views Accès à la page d'accueil.
+INFO 2024-12-04 11:24:10,737 basehttp "GET / HTTP/1.1" 200 5638
+INFO 2024-12-04 11:28:48,237 basehttp "GET /post/jhgfdsdfghgfd/ HTTP/1.1" 200 3431
+WARNING 2024-12-04 11:28:48,493 log Not Found: /favicon.ico
+INFO 2024-12-04 11:28:48,495 basehttp - Broken pipe from ('127.0.0.1', 52607)
+INFO 2024-12-04 11:28:54,155 views Accès à la page d'accueil.
+INFO 2024-12-04 11:28:54,313 basehttp "GET / HTTP/1.1" 200 5638
+WARNING 2024-12-04 11:28:54,481 log Not Found: /favicon.ico
+INFO 2024-12-04 11:28:54,483 basehttp - Broken pipe from ('127.0.0.1', 52609)
+INFO 2024-12-04 11:28:55,756 basehttp "GET /post/jghfd/ HTTP/1.1" 200 3437
+WARNING 2024-12-04 11:28:55,864 log Not Found: /favicon.ico
+INFO 2024-12-04 11:28:55,866 basehttp - Broken pipe from ('127.0.0.1', 52611)
+INFO 2024-12-04 11:28:56,691 views Accès à la page d'accueil.
+INFO 2024-12-04 11:28:56,831 basehttp "GET / HTTP/1.1" 200 5638
+INFO 2024-12-04 11:29:06,814 basehttp "GET /post/quickkkkk/ HTTP/1.1" 200 3627
+WARNING 2024-12-04 11:29:07,986 log Not Found: /favicon.ico
+INFO 2024-12-04 11:29:07,988 basehttp - Broken pipe from ('127.0.0.1', 52614)
+INFO 2024-12-04 11:29:08,792 basehttp "GET /post/quickkkkk/ HTTP/1.1" 200 3627
+INFO 2024-12-04 11:29:10,316 views Accès à la page d'accueil.
+INFO 2024-12-04 11:29:10,462 basehttp "GET / HTTP/1.1" 200 5638
+INFO 2024-12-04 11:29:11,223 basehttp "GET /post/hello/ HTTP/1.1" 200 3452
+INFO 2024-12-04 11:29:12,397 views Accès à la page d'accueil.
+INFO 2024-12-04 11:29:12,522 basehttp "GET / HTTP/1.1" 200 5638
+INFO 2024-12-04 11:29:13,278 basehttp "GET /post/gggggggggggggggg/ HTTP/1.1" 200 3627
+INFO 2024-12-04 11:29:14,436 views Accès à la page d'accueil.
+INFO 2024-12-04 11:29:14,552 basehttp "GET / HTTP/1.1" 200 5638
+WARNING 2024-12-04 11:29:14,649 log Not Found: /favicon.ico
+INFO 2024-12-04 11:29:14,651 basehttp - Broken pipe from ('127.0.0.1', 52618)
+INFO 2024-12-04 11:29:15,745 basehttp "GET /post/zadefnhjhngbf/ HTTP/1.1" 200 3433
+INFO 2024-12-04 11:29:16,834 views Accès à la page d'accueil.
+INFO 2024-12-04 11:29:16,952 basehttp "GET / HTTP/1.1" 200 5638
+INFO 2024-12-04 11:34:51,025 autoreload C:\code\cours-django\django-project\env\project_blog\project_blog\settings.py changed, reloading.
+INFO 2024-12-04 11:34:52,151 autoreload Watching for file changes with StatReloader
