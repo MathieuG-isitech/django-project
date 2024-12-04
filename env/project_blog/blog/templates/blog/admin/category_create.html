@@ -76,18 +76,22 @@
 </head>
 <body>
     <div class="form-container">
-        <h1>Créer une nouvelle catégorie</h1>
+        {% load i18n %}
+        <h1>{% trans "Create a New Category" %}</h1>
         <form method="POST">
             {% csrf_token %}
-            <label for="nom">Nom de la catégorie :</label>
+            <label for="nom">{% trans "Category Name:" %}</label>
             <input type="text" name="nom" id="nom" required>
-            <label for="description">Description :</label>
+            
+            <label for="description">{% trans "Description:" %}</label>
             <input type="text" name="description" id="description" required>
-            <button type="submit">Créer</button>
+            
+            <button type="submit">{% trans "Create" %}</button>
         </form>
         <div class="back-link">
-            <a href="{% url 'category-list' %}">Retour à la liste des catégories</a>
+            <a href="{% url 'category-list' %}">{% trans "Back to category list" %}</a>
         </div>
     </div>
+    
 </body>
 </html>

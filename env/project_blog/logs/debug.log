@@ -931,3 +931,388 @@ INFO 2024-12-04 15:57:57,157 autoreload C:\code\cours-django\django-project\env\
 INFO 2024-12-04 15:57:58,215 autoreload Watching for file changes with StatReloader
 INFO 2024-12-04 15:58:41,030 autoreload C:\code\cours-django\django-project\env\project_blog\blog\views.py changed, reloading.
 INFO 2024-12-04 15:58:42,240 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:58:44,170 views Accès à la page d'accueil.
+INFO 2024-12-04 15:58:44,311 basehttp "GET / HTTP/1.1" 200 6209
+WARNING 2024-12-04 15:58:44,414 log Not Found: /favicon.ico
+INFO 2024-12-04 15:58:44,416 basehttp - Broken pipe from ('127.0.0.1', 55643)
+INFO 2024-12-04 15:58:46,006 basehttp "POST /fr/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 15:58:46,019 views Accès à la page d'accueil.
+INFO 2024-12-04 15:58:46,106 basehttp "GET / HTTP/1.1" 200 6209
+INFO 2024-12-04 15:58:47,384 basehttp "POST /fr/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 15:58:47,394 views Accès à la page d'accueil.
+INFO 2024-12-04 15:58:47,491 basehttp "GET / HTTP/1.1" 200 6183
+INFO 2024-12-04 15:58:51,126 basehttp "POST /en/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 15:58:51,145 views Accès à la page d'accueil.
+INFO 2024-12-04 15:58:51,370 basehttp "GET / HTTP/1.1" 200 6209
+INFO 2024-12-04 16:27:50,879 views Accès à la page d'accueil.
+INFO 2024-12-04 16:27:50,935 basehttp "GET / HTTP/1.1" 200 6209
+WARNING 2024-12-04 16:27:51,023 log Not Found: /favicon.ico
+INFO 2024-12-04 16:27:51,024 basehttp - Broken pipe from ('127.0.0.1', 56152)
+INFO 2024-12-04 16:27:54,345 basehttp "POST /fr/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 16:27:54,359 views Accès à la page d'accueil.
+INFO 2024-12-04 16:27:54,410 basehttp "GET / HTTP/1.1" 200 6183
+INFO 2024-12-04 16:27:56,719 basehttp "POST /en/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 16:27:56,723 views Accès à la page d'accueil.
+INFO 2024-12-04 16:27:56,774 basehttp "GET / HTTP/1.1" 200 6209
+WARNING 2024-12-04 16:27:56,815 log Not Found: /favicon.ico
+INFO 2024-12-04 16:27:56,817 basehttp - Broken pipe from ('127.0.0.1', 56155)
+INFO 2024-12-04 16:27:59,605 basehttp "POST /fr/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 16:27:59,614 views Accès à la page d'accueil.
+INFO 2024-12-04 16:27:59,665 basehttp "GET / HTTP/1.1" 200 6183
+WARNING 2024-12-04 16:27:59,706 log Not Found: /favicon.ico
+INFO 2024-12-04 16:27:59,707 basehttp - Broken pipe from ('127.0.0.1', 56159)
+INFO 2024-12-04 16:28:02,340 basehttp "POST /en/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 16:28:02,348 views Accès à la page d'accueil.
+INFO 2024-12-04 16:28:02,397 basehttp "GET / HTTP/1.1" 200 6209
+INFO 2024-12-04 16:28:04,252 basehttp "POST /fr/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 16:28:04,261 views Accès à la page d'accueil.
+INFO 2024-12-04 16:28:04,314 basehttp "GET / HTTP/1.1" 200 6183
+WARNING 2024-12-04 16:28:04,351 log Not Found: /favicon.ico
+INFO 2024-12-04 16:28:04,352 basehttp - Broken pipe from ('127.0.0.1', 56162)
+INFO 2024-12-04 16:28:06,824 basehttp "POST /en/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 16:28:06,827 views Accès à la page d'accueil.
+INFO 2024-12-04 16:28:06,875 basehttp "GET / HTTP/1.1" 200 6209
+INFO 2024-12-04 16:49:51,160 views Accès à la page d'accueil.
+INFO 2024-12-04 16:49:51,201 basehttp "GET / HTTP/1.1" 200 6209
+WARNING 2024-12-04 16:49:51,266 log Not Found: /favicon.ico
+INFO 2024-12-04 16:49:51,267 basehttp - Broken pipe from ('127.0.0.1', 56449)
+INFO 2024-12-04 16:49:53,303 basehttp "POST /fr/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 16:49:53,314 views Accès à la page d'accueil.
+INFO 2024-12-04 16:49:53,352 basehttp "GET / HTTP/1.1" 200 6183
+WARNING 2024-12-04 16:49:53,388 log Not Found: /favicon.ico
+INFO 2024-12-04 16:49:53,388 basehttp - Broken pipe from ('127.0.0.1', 56451)
+INFO 2024-12-04 16:49:55,198 basehttp "POST /en/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 16:49:55,201 views Accès à la page d'accueil.
+INFO 2024-12-04 16:49:55,239 basehttp "GET / HTTP/1.1" 200 6209
+INFO 2024-12-04 20:40:48,736 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 20:41:21,574 views Accès à la page d'accueil.
+INFO 2024-12-04 20:41:21,791 basehttp "GET / HTTP/1.1" 200 6209
+WARNING 2024-12-04 20:41:21,915 log Not Found: /favicon.ico
+WARNING 2024-12-04 20:41:21,917 basehttp "GET /favicon.ico HTTP/1.1" 404 4538
+INFO 2024-12-04 20:47:07,873 autoreload C:\code\cours-django\django-project\env\project_blog\project_blog\settings.py changed, reloading.
+INFO 2024-12-04 20:47:09,304 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 20:52:47,952 views Accès à la page d'accueil.
+INFO 2024-12-04 20:52:48,099 basehttp "GET / HTTP/1.1" 200 6270
+WARNING 2024-12-04 20:52:48,193 log Not Found: /favicon.ico
+INFO 2024-12-04 20:52:48,196 basehttp - Broken pipe from ('127.0.0.1', 55146)
+INFO 2024-12-04 20:52:55,403 basehttp "POST /fr/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 20:52:55,414 views Accès à la page d'accueil.
+INFO 2024-12-04 20:52:55,531 basehttp "GET / HTTP/1.1" 200 6326
+WARNING 2024-12-04 20:52:55,611 log Not Found: /favicon.ico
+INFO 2024-12-04 20:52:55,613 basehttp - Broken pipe from ('127.0.0.1', 55148)
+INFO 2024-12-04 20:52:57,469 basehttp "POST /it/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 20:52:57,479 views Accès à la page d'accueil.
+INFO 2024-12-04 20:52:57,608 basehttp "GET / HTTP/1.1" 200 6253
+WARNING 2024-12-04 20:52:57,699 log Not Found: /favicon.ico
+INFO 2024-12-04 20:52:57,701 basehttp - Broken pipe from ('127.0.0.1', 55150)
+INFO 2024-12-04 20:53:00,326 basehttp "POST /en/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 20:53:00,344 views Accès à la page d'accueil.
+INFO 2024-12-04 20:53:00,452 basehttp "GET / HTTP/1.1" 200 6270
+INFO 2024-12-04 20:53:15,351 views Accès à la page d'accueil.
+INFO 2024-12-04 20:53:15,435 basehttp "GET / HTTP/1.1" 200 6270
+WARNING 2024-12-04 20:53:15,508 log Not Found: /favicon.ico
+INFO 2024-12-04 20:53:15,510 basehttp - Broken pipe from ('127.0.0.1', 55152)
+INFO 2024-12-04 20:53:17,556 views Accès à la page d'accueil.
+INFO 2024-12-04 20:53:17,637 basehttp "GET / HTTP/1.1" 200 6270
+WARNING 2024-12-04 20:53:17,731 log Not Found: /favicon.ico
+INFO 2024-12-04 20:53:17,732 basehttp - Broken pipe from ('127.0.0.1', 55155)
+INFO 2024-12-04 20:53:18,212 views Accès à la page d'accueil.
+INFO 2024-12-04 20:53:18,295 basehttp "GET / HTTP/1.1" 200 6270
+INFO 2024-12-04 20:53:20,400 basehttp "POST /fr/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 20:53:20,421 views Accès à la page d'accueil.
+INFO 2024-12-04 20:53:20,522 basehttp "GET / HTTP/1.1" 200 6326
+INFO 2024-12-04 20:53:31,238 autoreload C:\code\cours-django\django-project\env\project_blog\project_blog\settings.py changed, reloading.
+INFO 2024-12-04 20:53:32,200 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 20:53:35,797 views Accès à la page d'accueil.
+INFO 2024-12-04 20:53:35,911 basehttp "GET / HTTP/1.1" 200 6326
+WARNING 2024-12-04 20:53:36,071 log Not Found: /favicon.ico
+INFO 2024-12-04 20:53:36,072 basehttp - Broken pipe from ('127.0.0.1', 55162)
+INFO 2024-12-04 20:53:38,934 basehttp "POST /it/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 20:53:38,942 views Accès à la page d'accueil.
+INFO 2024-12-04 20:53:39,017 basehttp "GET / HTTP/1.1" 200 6270
+WARNING 2024-12-04 20:53:39,086 log Not Found: /favicon.ico
+INFO 2024-12-04 20:53:39,088 basehttp - Broken pipe from ('127.0.0.1', 55164)
+INFO 2024-12-04 20:53:44,320 basehttp "POST /fr/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 20:53:44,337 views Accès à la page d'accueil.
+INFO 2024-12-04 20:53:44,451 basehttp "GET / HTTP/1.1" 200 6253
+WARNING 2024-12-04 20:53:44,525 log Not Found: /favicon.ico
+INFO 2024-12-04 20:53:44,526 basehttp - Broken pipe from ('127.0.0.1', 55172)
+INFO 2024-12-04 20:53:49,443 basehttp "POST /en/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 20:53:49,453 views Accès à la page d'accueil.
+INFO 2024-12-04 20:53:49,667 basehttp "GET / HTTP/1.1" 200 6270
+INFO 2024-12-04 20:54:27,340 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 20:54:29,740 views Accès à la page d'accueil.
+INFO 2024-12-04 20:54:29,864 basehttp "GET / HTTP/1.1" 200 6270
+WARNING 2024-12-04 20:54:29,982 log Not Found: /favicon.ico
+INFO 2024-12-04 20:54:29,986 basehttp - Broken pipe from ('127.0.0.1', 55179)
+INFO 2024-12-04 20:54:31,591 basehttp "POST /fr/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 20:54:31,604 views Accès à la page d'accueil.
+INFO 2024-12-04 20:54:31,713 basehttp "GET / HTTP/1.1" 200 6326
+WARNING 2024-12-04 20:54:31,790 log Not Found: /favicon.ico
+INFO 2024-12-04 20:54:31,791 basehttp - Broken pipe from ('127.0.0.1', 55181)
+INFO 2024-12-04 20:54:34,423 basehttp "POST /it/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 20:54:34,431 views Accès à la page d'accueil.
+INFO 2024-12-04 20:54:34,510 basehttp "GET / HTTP/1.1" 200 6253
+INFO 2024-12-04 20:54:35,860 basehttp "POST /en/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 20:54:35,879 views Accès à la page d'accueil.
+INFO 2024-12-04 20:54:35,985 basehttp "GET / HTTP/1.1" 200 6270
+WARNING 2024-12-04 20:54:36,070 log Not Found: /favicon.ico
+INFO 2024-12-04 20:54:36,073 basehttp - Broken pipe from ('127.0.0.1', 55183)
+INFO 2024-12-04 20:55:22,169 autoreload C:\code\cours-django\django-project\env\project_blog\project_blog\settings.py changed, reloading.
+INFO 2024-12-04 20:55:23,316 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 20:56:49,850 basehttp "POST /fr/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 20:56:49,859 views Accès à la page d'accueil.
+INFO 2024-12-04 20:56:49,959 basehttp "GET / HTTP/1.1" 200 6253
+INFO 2024-12-04 20:56:51,937 basehttp "POST /en/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 20:56:51,949 views Accès à la page d'accueil.
+INFO 2024-12-04 20:56:52,060 basehttp "GET / HTTP/1.1" 200 6354
+INFO 2024-12-04 20:56:54,682 basehttp "POST /it/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 20:56:54,695 views Accès à la page d'accueil.
+INFO 2024-12-04 20:56:54,808 basehttp "GET / HTTP/1.1" 200 6279
+INFO 2024-12-04 20:56:56,873 basehttp "POST /fr/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 20:56:56,895 views Accès à la page d'accueil.
+INFO 2024-12-04 20:56:57,009 basehttp "GET / HTTP/1.1" 200 6253
+WARNING 2024-12-04 20:56:57,100 log Not Found: /favicon.ico
+INFO 2024-12-04 20:56:57,102 basehttp - Broken pipe from ('127.0.0.1', 55194)
+INFO 2024-12-04 20:56:59,317 basehttp "POST /en/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 20:56:59,333 views Accès à la page d'accueil.
+INFO 2024-12-04 20:56:59,447 basehttp "GET / HTTP/1.1" 200 6279
+INFO 2024-12-04 20:57:01,430 basehttp "POST /fr/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 20:57:01,444 views Accès à la page d'accueil.
+INFO 2024-12-04 20:57:01,556 basehttp "GET / HTTP/1.1" 200 6354
+WARNING 2024-12-04 20:57:01,644 log Not Found: /favicon.ico
+INFO 2024-12-04 20:57:01,646 basehttp - Broken pipe from ('127.0.0.1', 55200)
+INFO 2024-12-04 20:57:19,508 views Accès à la page d'accueil.
+INFO 2024-12-04 20:57:19,597 basehttp "GET / HTTP/1.1" 200 6354
+INFO 2024-12-04 20:57:27,245 basehttp "GET /post/jhgfdsdfghgfd/ HTTP/1.1" 200 3431
+WARNING 2024-12-04 20:57:27,315 log Not Found: /favicon.ico
+INFO 2024-12-04 20:57:27,318 basehttp - Broken pipe from ('127.0.0.1', 55204)
+WARNING 2024-12-04 20:57:28,309 log Not Found: /favicon.ico
+INFO 2024-12-04 20:57:28,311 basehttp - Broken pipe from ('127.0.0.1', 55207)
+INFO 2024-12-04 20:57:31,100 basehttp "GET /post/jhgfdsdfghgfd/ HTTP/1.1" 200 3431
+INFO 2024-12-04 20:57:33,644 basehttp "GET /post/quickkkkk/ HTTP/1.1" 200 3627
+INFO 2024-12-04 20:57:34,780 views Accès à la page d'accueil.
+INFO 2024-12-04 20:57:34,876 basehttp "GET / HTTP/1.1" 200 6354
+WARNING 2024-12-04 20:57:34,965 log Not Found: /favicon.ico
+INFO 2024-12-04 20:57:34,966 basehttp - Broken pipe from ('127.0.0.1', 55208)
+INFO 2024-12-04 20:57:36,246 views Accès à la liste des catégories.
+INFO 2024-12-04 20:57:36,256 basehttp "GET /categories/ HTTP/1.1" 200 5467
+INFO 2024-12-04 20:58:12,566 views Accès à la page d'accueil.
+INFO 2024-12-04 20:58:12,704 basehttp "GET / HTTP/1.1" 200 6354
+INFO 2024-12-04 20:58:14,183 basehttp "POST /it/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 20:58:14,194 views Accès à la page d'accueil.
+INFO 2024-12-04 20:58:14,279 basehttp "GET / HTTP/1.1" 200 6253
+INFO 2024-12-04 20:58:16,237 basehttp "POST /en/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 20:58:16,253 views Accès à la page d'accueil.
+INFO 2024-12-04 20:58:16,337 basehttp "GET / HTTP/1.1" 200 6279
+INFO 2024-12-04 20:58:18,237 basehttp "POST /fr/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 20:58:18,250 views Accès à la page d'accueil.
+INFO 2024-12-04 20:58:18,345 basehttp "GET / HTTP/1.1" 200 6354
+WARNING 2024-12-04 20:58:18,432 log Not Found: /favicon.ico
+INFO 2024-12-04 20:58:18,434 basehttp - Broken pipe from ('127.0.0.1', 55213)
+INFO 2024-12-04 20:58:19,212 basehttp "POST /it/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 20:58:19,220 views Accès à la page d'accueil.
+INFO 2024-12-04 20:58:19,312 basehttp "GET / HTTP/1.1" 200 6253
+INFO 2024-12-04 20:58:20,620 basehttp "POST /en/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 20:58:20,641 views Accès à la page d'accueil.
+INFO 2024-12-04 20:58:20,743 basehttp "GET / HTTP/1.1" 200 6354
+INFO 2024-12-04 20:58:22,253 basehttp "POST /it/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 20:58:22,269 views Accès à la page d'accueil.
+INFO 2024-12-04 20:58:22,375 basehttp "GET / HTTP/1.1" 200 6279
+INFO 2024-12-04 20:58:23,919 basehttp "POST /fr/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 20:58:23,940 views Accès à la page d'accueil.
+INFO 2024-12-04 20:58:24,043 basehttp "GET / HTTP/1.1" 200 6253
+INFO 2024-12-04 20:58:25,104 basehttp "POST /en/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 20:58:25,124 views Accès à la page d'accueil.
+INFO 2024-12-04 20:58:25,234 basehttp "GET / HTTP/1.1" 200 6354
+INFO 2024-12-04 20:58:38,049 basehttp "POST /it/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 20:58:38,062 views Accès à la page d'accueil.
+INFO 2024-12-04 20:58:38,151 basehttp "GET / HTTP/1.1" 200 6253
+INFO 2024-12-04 20:58:39,524 basehttp "POST /en/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 20:58:39,543 views Accès à la page d'accueil.
+INFO 2024-12-04 20:58:39,630 basehttp "GET / HTTP/1.1" 200 6279
+WARNING 2024-12-04 20:58:39,716 log Not Found: /favicon.ico
+INFO 2024-12-04 20:58:39,717 basehttp - Broken pipe from ('127.0.0.1', 55222)
+INFO 2024-12-04 20:58:42,554 basehttp "POST /fr/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 20:58:42,578 views Accès à la page d'accueil.
+INFO 2024-12-04 20:58:42,688 basehttp "GET / HTTP/1.1" 200 6253
+INFO 2024-12-04 20:58:44,913 basehttp "POST /en/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 20:58:44,935 views Accès à la page d'accueil.
+INFO 2024-12-04 20:58:45,042 basehttp "GET / HTTP/1.1" 200 6354
+WARNING 2024-12-04 20:58:45,132 log Not Found: /favicon.ico
+INFO 2024-12-04 20:58:45,133 basehttp - Broken pipe from ('127.0.0.1', 55230)
+INFO 2024-12-04 21:03:47,220 views Accès à la page d'accueil.
+INFO 2024-12-04 21:03:47,284 basehttp "GET / HTTP/1.1" 200 6335
+WARNING 2024-12-04 21:03:47,348 log Not Found: /favicon.ico
+INFO 2024-12-04 21:03:47,349 basehttp - Broken pipe from ('127.0.0.1', 55247)
+INFO 2024-12-04 21:03:49,165 basehttp "POST /it/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 21:03:49,173 views Accès à la page d'accueil.
+INFO 2024-12-04 21:03:49,240 basehttp "GET / HTTP/1.1" 200 6279
+INFO 2024-12-04 21:03:50,504 basehttp "POST /fr/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 21:03:50,518 views Accès à la page d'accueil.
+INFO 2024-12-04 21:03:50,595 basehttp "GET / HTTP/1.1" 200 6253
+INFO 2024-12-04 21:03:52,218 basehttp "POST /en/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 21:03:52,233 views Accès à la page d'accueil.
+INFO 2024-12-04 21:03:52,440 basehttp "GET / HTTP/1.1" 200 6279
+INFO 2024-12-04 21:03:53,707 basehttp "POST /fr/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 21:03:53,722 views Accès à la page d'accueil.
+INFO 2024-12-04 21:03:53,810 basehttp "GET / HTTP/1.1" 200 6335
+WARNING 2024-12-04 21:03:53,872 log Not Found: /favicon.ico
+INFO 2024-12-04 21:03:53,873 basehttp - Broken pipe from ('127.0.0.1', 55249)
+INFO 2024-12-04 21:03:54,801 basehttp "GET /post/jhgfdsdfghgfd/ HTTP/1.1" 200 3431
+INFO 2024-12-04 21:05:15,595 autoreload C:\code\cours-django\django-project\env\project_blog\project_blog\settings.py changed, reloading.
+INFO 2024-12-04 21:05:16,543 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 21:09:06,926 basehttp "GET /post/jhgfdsdfghgfd/ HTTP/1.1" 200 3431
+WARNING 2024-12-04 21:09:07,012 log Not Found: /favicon.ico
+INFO 2024-12-04 21:09:07,015 basehttp - Broken pipe from ('127.0.0.1', 55280)
+INFO 2024-12-04 21:09:08,640 views Accès à la page d'accueil.
+INFO 2024-12-04 21:09:08,748 basehttp "GET / HTTP/1.1" 200 6335
+WARNING 2024-12-04 21:09:08,850 log Not Found: /favicon.ico
+INFO 2024-12-04 21:09:08,852 basehttp - Broken pipe from ('127.0.0.1', 55282)
+INFO 2024-12-04 21:09:11,103 basehttp "POST /it/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 21:09:11,119 views Accès à la page d'accueil.
+INFO 2024-12-04 21:09:11,215 basehttp "GET / HTTP/1.1" 200 6253
+INFO 2024-12-04 21:09:12,326 basehttp "GET /post/jhgfdsdfghgfd/ HTTP/1.1" 200 3431
+WARNING 2024-12-04 21:09:12,404 log Not Found: /favicon.ico
+INFO 2024-12-04 21:09:12,405 basehttp - Broken pipe from ('127.0.0.1', 55284)
+INFO 2024-12-04 21:12:41,037 basehttp "GET /post/jhgfdsdfghgfd/ HTTP/1.1" 200 3253
+WARNING 2024-12-04 21:12:41,098 log Not Found: /favicon.ico
+INFO 2024-12-04 21:12:41,099 basehttp - Broken pipe from ('127.0.0.1', 55293)
+INFO 2024-12-04 21:12:42,289 views Accès à la page d'accueil.
+INFO 2024-12-04 21:12:42,520 basehttp "GET / HTTP/1.1" 200 6253
+WARNING 2024-12-04 21:12:42,614 log Not Found: /favicon.ico
+INFO 2024-12-04 21:12:42,615 basehttp - Broken pipe from ('127.0.0.1', 55295)
+INFO 2024-12-04 21:12:44,331 basehttp "POST /en/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 21:12:44,341 views Accès à la page d'accueil.
+INFO 2024-12-04 21:12:44,442 basehttp "GET / HTTP/1.1" 200 6335
+INFO 2024-12-04 21:12:45,609 basehttp "GET /post/jhgfdsdfghgfd/ HTTP/1.1" 200 3269
+INFO 2024-12-04 21:15:25,426 basehttp "GET /post/jhgfdsdfghgfd/ HTTP/1.1" 200 3265
+WARNING 2024-12-04 21:15:25,535 log Not Found: /favicon.ico
+INFO 2024-12-04 21:15:25,536 basehttp - Broken pipe from ('127.0.0.1', 55313)
+INFO 2024-12-04 21:15:47,553 basehttp "GET /post/jhgfdsdfghgfd/ HTTP/1.1" 200 3265
+WARNING 2024-12-04 21:15:47,629 log Not Found: /favicon.ico
+INFO 2024-12-04 21:15:47,631 basehttp - Broken pipe from ('127.0.0.1', 55316)
+INFO 2024-12-04 21:15:48,389 basehttp "GET /post/jhgfdsdfghgfd/ HTTP/1.1" 200 3265
+WARNING 2024-12-04 21:15:48,492 log Not Found: /favicon.ico
+INFO 2024-12-04 21:15:48,493 basehttp - Broken pipe from ('127.0.0.1', 55318)
+INFO 2024-12-04 21:15:48,789 basehttp "GET /post/jhgfdsdfghgfd/ HTTP/1.1" 200 3265
+INFO 2024-12-04 21:15:49,145 basehttp "GET /post/jhgfdsdfghgfd/ HTTP/1.1" 200 3265
+INFO 2024-12-04 21:15:49,397 views Accès à la page d'accueil.
+INFO 2024-12-04 21:15:49,496 basehttp "GET / HTTP/1.1" 200 6335
+INFO 2024-12-04 21:15:51,136 basehttp "GET /post/jhgfdsdfghgfd/ HTTP/1.1" 200 3265
+INFO 2024-12-04 21:15:58,624 basehttp "GET /post/jhgfdsdfghgfd/ HTTP/1.1" 200 3265
+WARNING 2024-12-04 21:15:58,698 log Not Found: /favicon.ico
+INFO 2024-12-04 21:15:58,699 basehttp - Broken pipe from ('127.0.0.1', 55320)
+INFO 2024-12-04 21:16:02,619 basehttp "GET /post/jhgfdsdfghgfd/ HTTP/1.1" 200 3279
+WARNING 2024-12-04 21:16:02,693 log Not Found: /favicon.ico
+INFO 2024-12-04 21:16:02,695 basehttp - Broken pipe from ('127.0.0.1', 55326)
+INFO 2024-12-04 21:16:05,622 views Accès à la page d'accueil.
+INFO 2024-12-04 21:16:05,725 basehttp "GET / HTTP/1.1" 200 6335
+INFO 2024-12-04 21:16:07,381 basehttp "POST /it/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 21:16:07,393 views Accès à la page d'accueil.
+INFO 2024-12-04 21:16:07,466 basehttp "GET / HTTP/1.1" 200 6253
+WARNING 2024-12-04 21:16:07,539 log Not Found: /favicon.ico
+INFO 2024-12-04 21:16:07,540 basehttp - Broken pipe from ('127.0.0.1', 55329)
+INFO 2024-12-04 21:16:08,091 basehttp "GET /post/jhgfdsdfghgfd/ HTTP/1.1" 200 3253
+INFO 2024-12-04 21:16:09,864 views Accès à la page d'accueil.
+INFO 2024-12-04 21:16:09,954 basehttp "GET / HTTP/1.1" 200 6253
+INFO 2024-12-04 21:16:11,700 basehttp "POST /en/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 21:16:11,727 views Accès à la page d'accueil.
+INFO 2024-12-04 21:16:11,826 basehttp "GET / HTTP/1.1" 200 6279
+INFO 2024-12-04 21:16:12,401 basehttp "GET /post/jhgfdsdfghgfd/ HTTP/1.1" 200 3270
+INFO 2024-12-04 21:16:21,686 basehttp "GET /post/jhgfdsdfghgfd/ HTTP/1.1" 200 3270
+WARNING 2024-12-04 21:16:21,771 log Not Found: /favicon.ico
+INFO 2024-12-04 21:16:21,772 basehttp - Broken pipe from ('127.0.0.1', 55332)
+INFO 2024-12-04 21:16:26,375 basehttp "GET /post/jhgfdsdfghgfd/ HTTP/1.1" 200 3282
+WARNING 2024-12-04 21:16:26,467 log Not Found: /favicon.ico
+INFO 2024-12-04 21:16:26,468 basehttp - Broken pipe from ('127.0.0.1', 55341)
+INFO 2024-12-04 21:18:45,457 basehttp "GET /post/jhgfdsdfghgfd/ HTTP/1.1" 200 3282
+WARNING 2024-12-04 21:18:45,553 log Not Found: /favicon.ico
+INFO 2024-12-04 21:18:45,555 basehttp - Broken pipe from ('127.0.0.1', 55350)
+INFO 2024-12-04 21:18:46,514 views Accès à la page d'accueil.
+INFO 2024-12-04 21:18:46,608 basehttp "GET / HTTP/1.1" 200 6279
+WARNING 2024-12-04 21:18:46,718 log Not Found: /favicon.ico
+INFO 2024-12-04 21:18:46,719 basehttp - Broken pipe from ('127.0.0.1', 55352)
+INFO 2024-12-04 21:18:47,971 basehttp "GET /post-form/ HTTP/1.1" 200 3725
+INFO 2024-12-04 21:18:51,619 views Accès à la page d'accueil.
+INFO 2024-12-04 21:18:51,730 basehttp "GET / HTTP/1.1" 200 6279
+INFO 2024-12-04 21:18:53,587 basehttp "POST /fr/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 21:18:53,604 views Accès à la page d'accueil.
+INFO 2024-12-04 21:18:53,720 basehttp "GET / HTTP/1.1" 200 6253
+WARNING 2024-12-04 21:18:53,817 log Not Found: /favicon.ico
+INFO 2024-12-04 21:18:53,818 basehttp - Broken pipe from ('127.0.0.1', 55354)
+INFO 2024-12-04 21:18:55,317 basehttp "GET /post-form/ HTTP/1.1" 200 3725
+INFO 2024-12-04 21:19:08,388 basehttp "GET /post-form/ HTTP/1.1" 200 3725
+WARNING 2024-12-04 21:19:08,466 log Not Found: /favicon.ico
+INFO 2024-12-04 21:19:08,467 basehttp - Broken pipe from ('127.0.0.1', 55358)
+INFO 2024-12-04 21:19:09,155 basehttp "GET /post-form/ HTTP/1.1" 200 3725
+INFO 2024-12-04 21:19:09,480 views Accès à la page d'accueil.
+INFO 2024-12-04 21:19:09,583 basehttp "GET / HTTP/1.1" 200 6253
+WARNING 2024-12-04 21:19:09,680 log Not Found: /favicon.ico
+INFO 2024-12-04 21:19:09,681 basehttp - Broken pipe from ('127.0.0.1', 55361)
+INFO 2024-12-04 21:19:11,033 basehttp "POST /en/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 21:19:11,048 views Accès à la page d'accueil.
+INFO 2024-12-04 21:19:11,141 basehttp "GET / HTTP/1.1" 200 6279
+INFO 2024-12-04 21:19:12,076 basehttp "POST /fr/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 21:19:12,089 views Accès à la page d'accueil.
+INFO 2024-12-04 21:19:12,271 basehttp "GET / HTTP/1.1" 200 6253
+INFO 2024-12-04 21:19:12,993 views Accès à la liste des catégories.
+INFO 2024-12-04 21:19:13,003 basehttp "GET /categories/ HTTP/1.1" 200 5467
+WARNING 2024-12-04 21:19:14,165 log Not Found: /favicon.ico
+INFO 2024-12-04 21:19:14,167 basehttp - Broken pipe from ('127.0.0.1', 55364)
+INFO 2024-12-04 21:19:15,119 basehttp "GET /post-form/ HTTP/1.1" 200 3725
+INFO 2024-12-04 21:21:51,324 views Accès à la page d'accueil.
+INFO 2024-12-04 21:21:51,400 basehttp "GET / HTTP/1.1" 200 6253
+WARNING 2024-12-04 21:21:51,512 log Not Found: /favicon.ico
+INFO 2024-12-04 21:21:51,513 basehttp - Broken pipe from ('127.0.0.1', 55380)
+INFO 2024-12-04 21:21:53,937 basehttp "POST /en/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 21:21:53,958 views Accès à la page d'accueil.
+INFO 2024-12-04 21:21:54,055 basehttp "GET / HTTP/1.1" 200 6279
+WARNING 2024-12-04 21:21:54,145 log Not Found: /favicon.ico
+INFO 2024-12-04 21:21:54,146 basehttp - Broken pipe from ('127.0.0.1', 55382)
+INFO 2024-12-04 21:21:55,150 basehttp "GET /post/gggggggggggggggg/ HTTP/1.1" 200 3478
+INFO 2024-12-04 21:21:56,063 views Accès à la page d'accueil.
+INFO 2024-12-04 21:21:56,157 basehttp "GET / HTTP/1.1" 200 6279
+INFO 2024-12-04 21:21:57,592 basehttp "POST /fr/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 21:21:57,608 views Accès à la page d'accueil.
+INFO 2024-12-04 21:21:57,696 basehttp "GET / HTTP/1.1" 200 6335
+WARNING 2024-12-04 21:21:57,774 log Not Found: /favicon.ico
+INFO 2024-12-04 21:21:57,775 basehttp - Broken pipe from ('127.0.0.1', 55384)
+INFO 2024-12-04 21:21:58,367 basehttp "GET /post/gggggggggggggggg/ HTTP/1.1" 200 3475
+INFO 2024-12-04 21:21:59,498 views Accès à la page d'accueil.
+INFO 2024-12-04 21:21:59,585 basehttp "GET / HTTP/1.1" 200 6335
+INFO 2024-12-04 21:22:01,408 basehttp "POST /it/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 21:22:01,418 views Accès à la page d'accueil.
+INFO 2024-12-04 21:22:01,507 basehttp "GET / HTTP/1.1" 200 6279
+INFO 2024-12-04 21:22:03,225 basehttp "POST /fr/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 21:22:03,242 views Accès à la page d'accueil.
+INFO 2024-12-04 21:22:03,337 basehttp "GET / HTTP/1.1" 200 6253
+WARNING 2024-12-04 21:22:03,431 log Not Found: /favicon.ico
+INFO 2024-12-04 21:22:03,432 basehttp - Broken pipe from ('127.0.0.1', 55388)
+INFO 2024-12-04 21:22:04,973 basehttp "GET /post-form/ HTTP/1.1" 200 3725
+INFO 2024-12-04 21:22:25,482 basehttp "GET /post-form/ HTTP/1.1" 200 3725
+WARNING 2024-12-04 21:22:25,552 log Not Found: /favicon.ico
+INFO 2024-12-04 21:22:25,553 basehttp - Broken pipe from ('127.0.0.1', 55393)
+INFO 2024-12-04 21:22:26,062 basehttp "GET /post-form/ HTTP/1.1" 200 3725
+INFO 2024-12-04 21:22:48,692 basehttp "GET /post-form/ HTTP/1.1" 200 3675
+WARNING 2024-12-04 21:22:48,786 log Not Found: /favicon.ico
+INFO 2024-12-04 21:22:48,788 basehttp - Broken pipe from ('127.0.0.1', 55396)
+INFO 2024-12-04 21:22:49,817 views Accès à la page d'accueil.
+INFO 2024-12-04 21:22:49,923 basehttp "GET / HTTP/1.1" 200 6253
+WARNING 2024-12-04 21:22:50,010 log Not Found: /favicon.ico
+INFO 2024-12-04 21:22:50,012 basehttp - Broken pipe from ('127.0.0.1', 55400)
+INFO 2024-12-04 21:22:51,293 basehttp "POST /en/set_language/ HTTP/1.1" 302 0
+INFO 2024-12-04 21:22:51,312 views Accès à la page d'accueil.
+INFO 2024-12-04 21:22:51,414 basehttp "GET / HTTP/1.1" 200 6335
+INFO 2024-12-04 21:22:52,301 basehttp "GET /post-form/ HTTP/1.1" 200 3720
+INFO 2024-12-04 21:32:35,549 basehttp "GET /post-form/ HTTP/1.1" 200 3719
+WARNING 2024-12-04 21:32:35,631 log Not Found: /favicon.ico
+INFO 2024-12-04 21:32:35,639 basehttp - Broken pipe from ('127.0.0.1', 52982)
+INFO 2024-12-04 21:32:37,562 views Accès à la page d'accueil.
+INFO 2024-12-04 21:32:37,787 basehttp "GET / HTTP/1.1" 200 6335
+INFO 2024-12-04 21:32:43,609 views Accès à la liste des catégories.
+INFO 2024-12-04 21:32:43,620 basehttp "GET /categories/ HTTP/1.1" 200 5467
+WARNING 2024-12-04 21:32:43,712 log Not Found: /favicon.ico
+INFO 2024-12-04 21:32:43,715 basehttp - Broken pipe from ('127.0.0.1', 52984)
+INFO 2024-12-04 21:33:34,896 autoreload C:\code\cours-django\django-project\env\project_blog\blog\views.py changed, reloading.
+INFO 2024-12-04 21:33:36,016 autoreload Watching for file changes with StatReloader

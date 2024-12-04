@@ -120,8 +120,10 @@
                 <select name="language" onchange="this.form.submit()">
                     <option value="en" {% if LANGUAGE_CODE == 'en' %}selected{% endif %}>{% trans "English" %}</option>
                     <option value="fr" {% if LANGUAGE_CODE == 'fr' %}selected{% endif %}>{% trans "French" %}</option>
+                    <option value="it" {% if LANGUAGE_CODE == 'it' %}selected{% endif %}>{% trans "Italian" %}</option>
                 </select>
             </form>
+            
             
         </div>
     </div><br>

@@ -28,9 +28,9 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
-    'django.middleware.locale.LocaleMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -144,9 +144,10 @@ SECRET_KEY="django-insecure-ck!^!8s-^cwnfgno5aqob8m$ug#+sgme+55s+rom%6%(#ozfmp"
 LANGUAGES = [
     ('en', 'English'),
     ('fr', 'Français'),
+    ('it', 'Italiano')
 ]
 
-LANGUAGE_CODE = 'en'
+LANGUAGE_CODE = 'fr'
 
 LOCALE_PATHS = [
     BASE_DIR / 'locale',  # Répertoire où les fichiers de traduction seront stockés

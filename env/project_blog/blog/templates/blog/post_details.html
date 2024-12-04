@@ -106,34 +106,34 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1>{{ post.title }}</h1>
-        <p>{{ post.content }}</p>
-        <p style="text-align: center;">------------------</p>
+   <div class="container">
+    {% load i18n %}
+    <h1>{{ post.title }}</h1>
+    <p>{{ post.content }}</p>
+    <p style="text-align: center;">------------------</p>
 
-        <div class="flex-row">
-            <small>Catégorie : {{ post.category }}</small>
-            <small>Publié le {{ post.created_at|date:"d/m/Y" }}</small>
-        </div>
-        <div class="actions">
-            <div class="back-link">
-                <a href="{% url 'blog-home' %}">Retour à la liste des posts</a>
-            </div>
-
-            {% if user.is_superuser or user == post.author %}
-            <a href="{% url 'edit-post' post.id %}" class="edit-button">Modifier</a>
-            {% endif %}
-
-
-            {% if user.is_superuser or user == post.author %}
-            <form method="post" action="{% url 'delete-post' post.id %}"
-                onsubmit="return confirm('Êtes-vous sûr de vouloir supprimer ce post ?');">
-                {% csrf_token %}
-                <button type="submit" class="delete-button">Supprimer</button>
-            </form>
-            {% endif %}
-        </div>
+    <div class="flex-row">
+        <small>{% trans "Category:" %} {{ post.category }}</small>
+        <small>{% trans "Published on" %} {{ post.created_at|date:"d/m/Y" }}</small>
     </div>
+    <div class="actions">
+        <div class="back-link">
+            <a href="{% url 'blog-home' %}">{% trans "Back to post list" %}</a>
+        </div>
+
+        {% if user.is_superuser or user == post.author %}
+        <a href="{% url 'edit-post' post.id %}" class="edit-button">{% trans "Edit" %}</a>
+        {% endif %}
+
+        {% if user.is_superuser or user == post.author %}
+        <form method="post" action="{% url 'delete-post' post.id %}" onsubmit="return">
+            {% csrf_token %}
+            <button type="submit" class="delete-button">{% trans "Delete" %}</button>
+        </form>
+        {% endif %}
+    </div>
+</div>
+
 </body>
 
 </html>

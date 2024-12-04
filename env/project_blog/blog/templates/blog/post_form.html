@@ -102,31 +102,31 @@
 
 <body>
     <div class="container">
-        <h1>Ajouter un nouvel article</h1>
+        {% load i18n %}
+        <h1>{% trans "Add a new post" %}</h1>
         <form method="post" action="{% url 'blog-post-form' %}">
             {% csrf_token %}
             <div>
-                <label for="title">Titre :</label>
-                <input type="text" id="title" name="title" required placeholder="Entrez le titre de l'article">
+                <label for="title">{% trans "Title:" %}</label>
+                <input type="text" id="title" name="title" required placeholder="{% trans 'Enter the post title' %}">
             </div>
             <div>
-                <label for="content">Contenu :</label>
-                <textarea id="content" name="content" rows="6" required
-                    placeholder="Entrez le contenu de l'article"></textarea>
+                <label for="content">{% trans "Content:" %}</label>
+                <textarea id="content" name="content" rows="6" required placeholder="{% trans 'Enter the post content' %}"></textarea>
             </div>
             <div>
-                <label for="category">Catégorie :</label>
+                <label for="category">{% trans "Category:" %}</label>
                 <select id="category" name="category" required>
                     {% for category in categories %}
                     <option value="{{ category.id }}">{{ category.nom }}</option>
                     {% endfor %}
                 </select>
             </div>
-            <button type="submit">Publier</button>
+            <button type="submit">{% trans "Publish" %}</button>
         </form>
-
+    
         <div class="back-link">
-            <a href="{% url 'blog-home' %}">Retour à la page d'accueil</a>
+            <a href="{% url 'blog-home' %}">{% trans "Back to homepage" %}</a>
         </div>
     </div>
 </body>
