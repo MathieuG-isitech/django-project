@@ -1,6 +1,6 @@
 import logging
 from django.shortcuts import render, redirect, get_object_or_404
-from .models import Post, Category
+from .models import Post, Category, FavoritePost
 from django.utils.text import slugify
 from .forms import CategoryForm
 from django.utils.translation import get_language
@@ -156,10 +156,34 @@ def edit_post(request, post_id):
         categories = Category.objects.all()
         logger.debug(f"{len(categories)} catégories récupérées pour l'édition.")
         return render(request, 'blog/edit_post.html', {'post': post, 'categories': categories})
+   
+   
+   #page des catégories 
+def category_page(request, category_id=None):
+    categories = Category.objects.all()
+    if category_id:
+        posts = Post.objects.filter(category_id=category_id)
+    else:
+        posts = Post.objects.all()
+    return render(request, 'blog/category_page.html', {'posts': posts, 'categories': categories})
     
     
+def toggle_favorite(request, post_id):
+    post = get_object_or_404(Post, id=post_id)
+    favorite, created = FavoritePost.objects.get_or_create(user=request.user, post=post)
     
-    
+    if not created:
+        favorite.delete()
+    else:
+        return redirect('user_favorites')
+
+def user_favorites(request):
+    # Récupérer les favoris de l'utilisateur authentifié
+    favorite_posts = FavoritePost.objects.filter(user=request.user)
+    return render(request, 'blog/user_favorites.html', {'favorite_posts': favorite_posts})
+
+
+
 # CRUD catégorie
 
 @login_required

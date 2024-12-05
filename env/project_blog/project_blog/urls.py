@@ -18,12 +18,17 @@ urlpatterns = [
     path('categories/edit/<int:category_id>/', views.edit_category, name='edit-category'),
     path('categories/delete/<int:category_id>/', views.delete_category, name='delete-category'),
     
+    path('posts/category/<int:category_id>/', views.category_page, name='category_pages'),
+    path('posts/', views.category_page, name='all_posts'),
+    
+    path('post/<int:post_id>/toggle_favorite/', views.toggle_favorite, name='toggle_favorite'),
+    path('user/favorites/', views.user_favorites, name='user_favorites'),
+    
     path('login/', views.login_view, name='login'),
     path('signup/', views.signup_view, name='signup'),
     path('logout/', views.logout_view, name='logout'),
 ]
 
-# Utilisez uniquement cette ligne pour ajouter la vue set_language
 urlpatterns += i18n_patterns(
     path('set_language/', set_language, name='set_language'),
 )

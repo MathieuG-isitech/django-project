@@ -129,3 +129,14 @@ msgstr "Créer une nouvelle catégorie"
 msgid "Create"
 msgstr "Créer"
 
+msgid "Categories page"
+msgstr "Page Catégories"
+
+msgid "Your favorites"
+msgstr "Vos favories"
+
+msgid "Add to favorites"
+msgstr "Ajouter aux favories"
+
+msgid "Remove from favories"
+msgstr "Retirer des favories"

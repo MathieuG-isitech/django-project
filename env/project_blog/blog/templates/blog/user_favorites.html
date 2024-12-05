@@ -1,0 +1,104 @@
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% trans "Your Favorites" %}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fc;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #5c6bc0;
+        }
+
+        .favorite-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .favorite-list li {
+            background-color: #f9f9f9;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .favorite-list li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .favorite-list li a:hover {
+            color: #5c6bc0;
+        }
+
+        .empty-message {
+            text-align: center;
+            color: #888;
+            font-size: 18px;
+        }
+
+        .btn-back {
+            display: block;
+            width: 200px;
+            padding: 10px;
+            margin: 20px auto;
+            background-color: #5c6bc0;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .btn-back:hover {
+            background-color: #3f4c8b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>{% trans "Your Favorite Posts" %}</h1>
+
+        {% if favorite_posts %}
+            <ul class="favorite-list">
+                {% for favorite in favorite_posts %}
+                    <li>
+                        <a href="{% url 'post_details' favorite.post.slug %}">
+                            {{ favorite.post.title }}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p class="empty-message">{% trans "You have no favorite posts." %}</p>
+        {% endif %}
+
+        <a href="{% url 'all_posts' %}" class="btn-back">{% trans "Back to All Posts" %}</a>
+    </div>
+</body>
+</html>

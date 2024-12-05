@@ -94,17 +94,19 @@
         .admin-button:hover {
             background-color: #3f4c8b;
         }
+
+        .m-1 {
+            margin: 1rem;
+        }
     </style>
 </head>
 
 <body>
     <div class="nav-bar">
-        <p>{% trans "Home" %}</p>
-
         {% if user.is_authenticated %}
         <div>
             <p>{% trans "Welcome," %} {{ user.username }}</p>
-            <a class="user-connected" href="{% url 'logout' %}">{% trans "Logout" %}</a>
+            <a class="user-connected m-1" href="{% url 'logout' %}">{% trans "Logout" %}</a>
         </div>
         {% else %}
         <div>
@@ -112,28 +114,24 @@
             <a class="user-connected" href="{% url 'signup' %}">{% trans "Sign Up" %}</a>
         </div>
         {% endif %}
-
-        <!-- Formulaire de changement de langue -->
         <div>
             <form method="post" action="{% url 'set_language' %}">
                 {% csrf_token %}
-                <select name="language" onchange="this.form.submit()">
+                <label for="">Langue :</label>
+                <select class="m-1" name="language" onchange="this.form.submit()">
                     <option value="en" {% if LANGUAGE_CODE == 'en' %}selected{% endif %}>{% trans "English" %}</option>
                     <option value="fr" {% if LANGUAGE_CODE == 'fr' %}selected{% endif %}>{% trans "French" %}</option>
                     <option value="it" {% if LANGUAGE_CODE == 'it' %}selected{% endif %}>{% trans "Italian" %}</option>
                 </select>
             </form>
-            
-            
         </div>
+        <a href="{% url 'all_posts' %}" class="user-connected m-1">{% trans "Categories page" %}</a>
+        <a href="{% url 'user_favorites' %}" class="user-connected m-1">{% trans "Your favorites" %}</a>
+
     </div><br>
 
     <div class="template-post">
         <a href="{% url 'blog-post-form' %}" class="button-add">{% trans "Add a post" %}</a>
-
-        {% if user.is_superuser %}
-        <a href="{% url 'category-list' %}" class="admin-button">{% trans "Manage Categories" %}</a>
-        {% endif %}
 
         {% for post in posts %}
         <div class="post-title {% if post.author == user %}user-post{% endif %}">
@@ -147,6 +145,17 @@
                     <span style="color: rgb(0, 0, 128);">{{ post.created_at }}</span>
                 </div>
             </a>
+    
+            {% if user.is_authenticated %}
+            <form method="post" action="{% url 'toggle_favorite' post.id %}" style="display:inline;">
+                {% csrf_token %}
+                {% if post in user.favorite_posts.all %}
+                <button type="submit">{% trans "Remove from favorites" %}</button>
+                {% else %}
+                <button type="submit">{% trans "Add to favorites" %}</button>
+                {% endif %}
+            </form>
+            {% endif %}
         </div>
         {% endfor %}
     </div>
