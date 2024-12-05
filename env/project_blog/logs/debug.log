@@ -4575,3 +4575,13 @@ INFO 2024-12-05 11:34:15,477 basehttp "GET / HTTP/1.1" 200 8733
 INFO 2024-12-05 11:35:26,131 autoreload Watching for file changes with StatReloader
 INFO 2024-12-05 11:35:27,971 views Accès à la page d'accueil.
 INFO 2024-12-05 11:35:28,160 basehttp "GET / HTTP/1.1" 200 8733
+INFO 2024-12-05 11:48:36,001 views Accès à la page d'accueil.
+INFO 2024-12-05 11:48:36,134 basehttp "GET / HTTP/1.1" 200 8733
+WARNING 2024-12-05 11:48:36,354 log Not Found: /favicon.ico
+INFO 2024-12-05 11:48:36,355 basehttp - Broken pipe from ('127.0.0.1', 57958)
+INFO 2024-12-05 11:48:36,979 views Accès à la page d'accueil.
+INFO 2024-12-05 11:48:37,133 basehttp "GET / HTTP/1.1" 200 8733
+WARNING 2024-12-05 11:48:37,236 log Not Found: /favicon.ico
+INFO 2024-12-05 11:48:37,237 basehttp - Broken pipe from ('127.0.0.1', 57960)
+INFO 2024-12-05 11:48:37,639 basehttp "GET /user/favorites/ HTTP/1.1" 200 2559
+INFO 2024-12-05 11:48:44,329 autoreload Watching for file changes with StatReloader
